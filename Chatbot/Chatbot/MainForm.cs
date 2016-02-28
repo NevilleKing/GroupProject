@@ -20,12 +20,29 @@ namespace Chatbot
         {
             InitializeComponent();
             skype = new Skype();
+            skype.MessageStatus += OnMessage;
+            skype.Attach(7, false);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            skype.Attach(5, true);
-            skype.SendMessage("vollytrolly", "hey");
+            skype.SendMessage("Group23test", textBox1.Text);
+            textBox1.Text = String.Empty;
+        }
+
+
+	//Will read from skype and update text box, but only if skype is the active window (?)
+        private void OnMessage(ChatMessage msg, TChatMessageStatus status)
+        {
+           if (msg.Sender.Handle == "group23test")
+            {
+                richTextBox1.AppendText("\n\nBot: " + msg.Body);
+            }
+
+           else
+            {
+                richTextBox1.AppendText("\n\nYou: " + msg.Body);
+            }
         }
     }
 }
