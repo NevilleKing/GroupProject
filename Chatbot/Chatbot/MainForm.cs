@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SKYPE4COMLib;
+using System.Diagnostics;
 
 namespace Chatbot
 {
@@ -55,5 +56,14 @@ namespace Chatbot
             }
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Process[] pname = Process.GetProcessesByName("Skype");
+            if (pname.Length == 0)
+            {
+                MessageBox.Show("Skype is not running. Please open Skype and run the program again.", "Skype not Running", MessageBoxButtons.OK);
+                System.Windows.Forms.Application.Exit();
+            }
+        }
     }
 }
