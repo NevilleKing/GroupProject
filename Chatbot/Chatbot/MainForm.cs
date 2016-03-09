@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SKYPE4COMLib;
 using System.Diagnostics;
+using SKYPE4COMLib;
+using AIMLbot;
 
 namespace Chatbot
 {
@@ -64,6 +65,25 @@ namespace Chatbot
                 MessageBox.Show("Skype is not running. Please open Skype and run the program again.", "Skype not Running", MessageBoxButtons.OK);
                 System.Windows.Forms.Application.Exit();
             }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Bot AimlBot = new Bot();
+            AIMLbot.User myUser = new AIMLbot.User("testUser", AimlBot);
+
+            AimlBot.loadSettings();
+            AimlBot.isAcceptingUserInput = false;
+            AimlBot.loadAIMLFromFiles();
+            AimlBot.isAcceptingUserInput = true;
+
+            String input = "how are you doing?";
+
+            Request r = new Request(input, myUser, AimlBot);
+            Result res = AimlBot.Chat(r);
+
+            richTextBox1.AppendText(res.Output);
         }
     }
 }
