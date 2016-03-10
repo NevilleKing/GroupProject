@@ -17,7 +17,8 @@ namespace Chatbot
     {
 
         private Skype skype;
-        private string botName; // display name of local user (bot)
+        private string skype_botName; // display name of local user (bot)
+        ChatResponse chatbot;
 
         public MainForm()
         {
@@ -25,7 +26,8 @@ namespace Chatbot
             skype = new Skype();
             skype.MessageStatus += OnMessage;
             skype.Attach(7, false);
-            botName = skype.CurrentUserHandle;
+            skype_botName = skype.CurrentUserHandle;
+            chatbot = new ChatResponse();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,20 +43,11 @@ namespace Chatbot
             switch (status)
             {
                 case TChatMessageStatus.cmsSent:
-                richTextBox1.AppendText("\n\nBot: " + msg.Body);
+                    richTextBox1.AppendText("\n\nBot: " + msg.Body);
                     break;
                 case TChatMessageStatus.cmsReceived:
-                richTextBox1.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
-
-                if (msg.Body.Contains("Hi") || msg.Body.Contains("Hello"))
-                {
-                    skype.SendMessage(msg.Sender.Handle, "Hi, how are you?");
-                }
-                else
-                {
-                    skype.SendMessage(msg.Sender.Handle, "I don't understand.");
-
-                }
+                    richTextBox1.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
+                    skype.SendMessage(msg.Sender.Handle, chatbot.getResponse(msg.Body));
                     break;
                 case TChatMessageStatus.cmsRead:
                 case TChatMessageStatus.cmsSending:
