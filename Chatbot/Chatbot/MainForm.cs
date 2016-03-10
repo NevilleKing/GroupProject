@@ -78,7 +78,7 @@ namespace Chatbot
             AimlBot.loadAIMLFromFiles();
             AimlBot.isAcceptingUserInput = true;
 
-            String input = "how are you doing?";
+            String input = "vagina";
 
             Request r = new Request(input, myUser, AimlBot);
             Result res = AimlBot.Chat(r);
