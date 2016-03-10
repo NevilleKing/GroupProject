@@ -101,8 +101,8 @@
   <PropertyGroup>
     <PreBuildEvent>if not exist "$(TargetDir)config" mkdir "$(TargetDir)config"
 if not exist "$(TargetDir)aiml" mkdir "$(TargetDir)aiml"
-copy "$(ProjectDir)\aiml\*.*" "$(TargetDir)\aiml\"
-copy "$(ProjectDir)\config\*.*" "$(TargetDir)\config\"</PreBuildEvent>
+copy "$(ProjectDir)aiml\*.*" "$(TargetDir)aiml\"
+copy "$(ProjectDir)config\*.*" "$(TargetDir)config\"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

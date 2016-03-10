@@ -17,6 +17,7 @@ namespace Chatbot
     {
 
         private Skype skype;
+        private string botName; // display name of local user (bot)
 
         public MainForm()
         {
@@ -24,6 +25,7 @@ namespace Chatbot
             skype = new Skype();
             skype.MessageStatus += OnMessage;
             skype.Attach(7, false);
+            botName = skype.CurrentUserHandle;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,27 +35,34 @@ namespace Chatbot
         }
 
 
-	//Will read from skype and update text box, but only if skype is the active window (?)
+        //Will read from skype and update text box, but only if skype is the active window (?)
         private void OnMessage(ChatMessage msg, TChatMessageStatus status)
         {
-           if (msg.Sender.Handle == "vollytrolly")
+            switch (status)
             {
-                richTextBox1.AppendText("\n\nCharlie: " + msg.Body);
+                case TChatMessageStatus.cmsSent:
+                richTextBox1.AppendText("\n\nBot: " + msg.Body);
+                    break;
+                case TChatMessageStatus.cmsReceived:
+                richTextBox1.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
 
                 if (msg.Body.Contains("Hi") || msg.Body.Contains("Hello"))
                 {
-                    skype.SendMessage("vollytrolly", "Hi, how are you?");
+                    skype.SendMessage(msg.Sender.Handle, "Hi, how are you?");
                 }
                 else
                 {
-                    skype.SendMessage("vollytrolly", "I don't understand.");
+                    skype.SendMessage(msg.Sender.Handle, "I don't understand.");
 
                 }
-            }
-
-            else
-            {
-                richTextBox1.AppendText("\n\nBot: " + msg.Body);
+                    break;
+                case TChatMessageStatus.cmsRead:
+                case TChatMessageStatus.cmsSending:
+                    // nothing
+                    break;
+                default:
+                    richTextBox1.AppendText("\n\n [ERROR]");
+                    break;
             }
         }
 
