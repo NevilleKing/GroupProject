@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using SKYPE4COMLib;
 using AIMLbot;
+using System.Threading;
 
 namespace Chatbot
 {
@@ -19,6 +20,7 @@ namespace Chatbot
         private Skype skype;
         private string skype_botName; // display name of local user (bot)
         ChatResponse chatbot;
+        List<myUser> conversation_users;
 
         public MainForm()
         {
@@ -28,6 +30,7 @@ namespace Chatbot
             skype.Attach(7, false);
             skype_botName = skype.CurrentUserHandle;
             chatbot = new ChatResponse();
+            conversation_users = new List<myUser>();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,19 +45,20 @@ namespace Chatbot
         {
             switch (status)
             {
-                case TChatMessageStatus.cmsSent:
-                    richTextBox1.AppendText("\n\nBot: " + msg.Body);
-                    break;
                 case TChatMessageStatus.cmsReceived:
-                    richTextBox1.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
-                    skype.SendMessage(msg.Sender.Handle, chatbot.getResponse(msg.Body));
+                    myUser usr = getCurrentUser(msg.Sender.Handle);
+                    usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
+                    string resp = chatbot.getResponse(msg.Body, usr.AIusr);
+                    skype.SendMessage(msg.Sender.Handle, resp);
+                    usr.textBox.AppendText("\n\nBot: " + resp);
                     break;
+                case TChatMessageStatus.cmsSent:
                 case TChatMessageStatus.cmsRead:
                 case TChatMessageStatus.cmsSending:
                     // nothing
                     break;
                 default:
-                    richTextBox1.AppendText("\n\n [ERROR]");
+                    MessageBox.Show("ERROR");
                     break;
             }
         }
@@ -66,8 +70,52 @@ namespace Chatbot
             {
                 MessageBox.Show("Skype is not running. Please open Skype and run the program again.", "Skype not Running", MessageBoxButtons.OK);
                 System.Windows.Forms.Application.Exit();
+            } else
+            {
+                skype.Client.Focus();
             }
 
+        }
+
+        private myUser initUser(string user)
+        {
+            TabPage tp;
+            if (conversation_users.Count == 0)
+            {
+                tp = tabControl1.TabPages[0];
+            } else
+            {
+                tp = new TabPage();
+            }
+            RichTextBox rtb = new RichTextBox();
+            rtb.Parent = tp;
+            rtb.Dock = DockStyle.Fill;
+            tp.Text = user;
+            if (conversation_users.Count != 0)
+                tabControl1.TabPages.Add(tp);
+            conversation_users.Add(new myUser(user, ref rtb, chatbot.getBot()));
+            tabControl1.Visible = true;
+            return conversation_users[conversation_users.Count-1];
+        }
+
+        private myUser getCurrentUser(string user)
+        {
+            myUser currentUsr = new myUser();
+            bool found = false;
+            foreach (myUser usr in conversation_users)
+            {
+                if (usr.userName == user)
+                {
+                    found = true;
+                    currentUsr = usr;
+                    break;
+                }
+            }
+
+            if (!found)
+                currentUsr = initUser(user);
+
+            return currentUsr;
         }
     }
 }

@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using SKYPE4COMLib;
 using AIMLbot;
 
 namespace Chatbot
@@ -13,12 +12,10 @@ namespace Chatbot
     class ChatResponse
     {
         Bot AimlBot;
-        AIMLbot.User myUser;
 
         public ChatResponse()
         {
             AimlBot = new Bot();
-            myUser = new AIMLbot.User("testUser", AimlBot);
 
             AimlBot.loadSettings();
             AimlBot.isAcceptingUserInput = false;
@@ -26,13 +23,18 @@ namespace Chatbot
             AimlBot.isAcceptingUserInput = true;
         }
 
-        public string getResponse(string input)
+        public string getResponse(string input, User theUsr)
         {
 
-            Request r = new Request(input, myUser, AimlBot);
+            Request r = new Request(input, theUsr, AimlBot);
             Result res = AimlBot.Chat(r);
 
             return res.Output;
+        }
+
+        public Bot getBot()
+        {
+            return AimlBot;
         }
     }
 }
