@@ -39,6 +39,11 @@ namespace Chatbot
             skype_botName = skype.CurrentUserHandle;
             chatbot = new ChatResponse();
             conversation_users = new List<myUser>();
+
+            foreach (ChatMessage m in skype.MissedMessages)
+            {
+                m.Seen = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,6 +56,7 @@ namespace Chatbot
         //Will read from skype and update text box, but only if skype is the active window (?)
         private void OnMessage(ChatMessage msg, TChatMessageStatus status)
         {
+            msg.Seen = true;
             switch (status)
             {
                 case TChatMessageStatus.cmsReceived:
@@ -73,7 +79,7 @@ namespace Chatbot
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            skype.Client.Focus();
+            timer1.Start();
         }
 
         private myUser initUser(string user)
@@ -115,6 +121,17 @@ namespace Chatbot
                 currentUsr = initUser(user);
 
             return currentUsr;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (skype.Client.IsRunning)
+            {
+                foreach(ChatMessage m in skype.MissedMessages) // Catch all for messages that don't trigger the Message Event
+                {
+                    OnMessage(m, m.Status);
+                }
+            }
         }
     }
 }
