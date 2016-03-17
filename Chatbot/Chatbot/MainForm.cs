@@ -48,7 +48,7 @@ namespace Chatbot
 
         private void button1_Click(object sender, EventArgs e)
         {
-            skype.SendMessage("vollytrolly", textBox1.Text);
+            skype.SendMessage(tabControl1.SelectedTab.Text, textBox1.Text);
             textBox1.Text = String.Empty;
         }
 
@@ -56,24 +56,27 @@ namespace Chatbot
         //Will read from skype and update text box, but only if skype is the active window (?)
         private void OnMessage(ChatMessage msg, TChatMessageStatus status)
         {
-            msg.Seen = true;
-            switch (status)
+            if (msg.Sender.Handle != skype_botName)
             {
-                case TChatMessageStatus.cmsReceived:
-                    myUser usr = getCurrentUser(msg.Sender.Handle);
-                    usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
-                    string resp = chatbot.getResponse(msg.Body, usr.AIusr);
-                    skype.SendMessage(msg.Sender.Handle, resp);
-                    usr.textBox.AppendText("\n\nBot: " + resp);
-                    break;
-                case TChatMessageStatus.cmsSent:
-                case TChatMessageStatus.cmsRead:
-                case TChatMessageStatus.cmsSending:
-                    // nothing
-                    break;
-                default:
-                    MessageBox.Show("ERROR");
-                    break;
+                msg.Seen = true;
+                switch (status)
+                {
+                    case TChatMessageStatus.cmsReceived:
+                        myUser usr = getCurrentUser(msg.Sender.Handle);
+                        usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
+                        string resp = chatbot.getResponse(msg.Body, usr.AIusr);
+                        skype.SendMessage(msg.Sender.Handle, resp);
+                        usr.textBox.AppendText("\n\nBot: " + resp);
+                        break;
+                    case TChatMessageStatus.cmsSent:
+                    case TChatMessageStatus.cmsRead:
+                    case TChatMessageStatus.cmsSending:
+                        // nothing
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
             }
         }
 
