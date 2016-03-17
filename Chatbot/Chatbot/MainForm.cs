@@ -25,6 +25,14 @@ namespace Chatbot
         public MainForm()
         {
             InitializeComponent();
+
+            Process[] pname = Process.GetProcessesByName("Skype");
+            if (pname.Length == 0)
+            {
+                MessageBox.Show("Skype is not running. Please open Skype and run the program again.", "Skype not Running", MessageBoxButtons.OK);
+                Environment.Exit(-1);
+            }
+
             skype = new Skype();
             skype.MessageStatus += OnMessage;
             skype.Attach(7, false);
@@ -65,16 +73,7 @@ namespace Chatbot
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Process[] pname = Process.GetProcessesByName("Skype");
-            if (pname.Length == 0)
-            {
-                MessageBox.Show("Skype is not running. Please open Skype and run the program again.", "Skype not Running", MessageBoxButtons.OK);
-                System.Windows.Forms.Application.Exit();
-            } else
-            {
-                skype.Client.Focus();
-            }
-
+            skype.Client.Focus();
         }
 
         private myUser initUser(string user)
