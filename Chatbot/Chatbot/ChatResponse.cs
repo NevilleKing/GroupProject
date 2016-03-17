@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
@@ -23,11 +24,13 @@ namespace Chatbot
             AimlBot.isAcceptingUserInput = true;
         }
 
+
         public string getResponse(string input, User theUsr)
         {
-
             Request r = new Request(input, theUsr, AimlBot);
             Result res = AimlBot.Chat(r);
+            int x = res.Output.Length;
+            Thread.Sleep(x*100);
 
             return res.Output;
         }
