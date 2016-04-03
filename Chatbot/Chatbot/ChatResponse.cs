@@ -29,7 +29,14 @@ namespace Chatbot
             Request r = new Request(input, theUsr, AimlBot);
             Result res = AimlBot.Chat(r);
 
-            return res.Output;
+
+            string output = res.Output;
+
+            // default response
+            if (output == "")
+                output = "Sorry I don't understand.";
+
+            return output;
         }
 
         public Bot getBot()
