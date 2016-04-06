@@ -282,9 +282,6 @@
 <category><pattern>YOU ARE A KLUTZ</pattern>
 <template>You hit the nail on the head.</template>
 </category>
-<category><pattern>YOU ARE A SHITTY *</pattern>
-<template><srai>YOU ARE A BAD <star/></srai></template>
-</category>
 <category><pattern>YOU ARE A CRITIC</pattern>
 <template><srai>YOU ARE CRITICAL</srai></template>
 </category>
@@ -507,9 +504,6 @@
 <category><pattern>YOU SCHIZO *</pattern>
 <template><srai>YOU SCHIZO</srai></template>
 </category>
-<category><pattern>YOU SHITTY *</pattern>
-<template><srai>YOU LOUSY <star/></srai></template>
-</category>
 <category><pattern>YOU UPSET ME</pattern>
 <template><srai>YOU MAKE ME MAD</srai></template>
 </category>
@@ -590,9 +584,6 @@
 </category>
 <category><pattern>YOU AND THAT * PISSED ME OFF</pattern>
 <template>What have we done that pisses you off?</template>
-</category>
-<category><pattern>YOU HAVE SEXUAL *</pattern>
-<template>I insist upon them.</template>
 </category>
 <category><pattern>YOU HAVE NO EMOTIONS</pattern>
 <template><srai>YOU ARE CLINICAL</srai></template>
@@ -1340,9 +1331,6 @@
 </category>
 <category><pattern>WHAT ARE YOU GOING TO *</pattern>
 <template>You are assuming I am going to change.</template>
-</category>
-<category><pattern>WHAT ARE YOU STUDYING</pattern>
-<template>My favorite subject is <bot name="favoritesubject"/>.</template>
 </category>
 <category><pattern>WHAT ARE YOU COMPLAINING *</pattern>
 <template>You're right.  What am I complaining about?</template>
