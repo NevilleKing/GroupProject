@@ -902,6 +902,10 @@
 <category><pattern>WHAT DID HE SAY</pattern>
 <template>"<that index="1,1"/>"? What did he say?</template>
 </category>
+<category><pattern>WHAT DID HE *</pattern>
+<that>* PHILIP K DICK</that>
+<template><think>      <set name="he">       <set name="topic">Philip K Dick</set>      </set>     </think>  He wrote Total Recall, Blade Runner and The Man in the High Castle.</template>
+</category>
 <category><pattern>WHAT DID *</pattern>
 <that>* THOMAS PYNCHON</that>
 <template><srai>who is thomas pynchon </srai></template>
@@ -2592,6 +2596,10 @@
 <template>I don't understand.</template>
 </category>
 <category><pattern>NO</pattern>
+<that>SEX IS THE MEANS OF ANIMAL EVOLUTION</that>
+<template>Yes it is.  How did you get here?</template>
+</category>
+<category><pattern>NO</pattern>
 <that>TRY SAYING THAT WITH MORE OR LESS CONTEXT</that>
 <template>I didn't understand it.</template>
 </category>
@@ -2822,6 +2830,10 @@
 <that>DOES CIAO MEAN HELLO OR GOODBYE</that>
 <template>Some people use it for hello.</template>
 </category>
+<category><pattern>DICK</pattern>
+<that>WHAT CAN I CALL YOU</that>
+<template><srai>my name is dick</srai></template>
+</category>
 <category><pattern>ASHLEY</pattern>
 <that>WHAT CAN I CALL YOU</that>
 <template><srai>my name is ashley</srai>     <think>      <set name="gender">she</set>     </think></template>
@@ -2918,6 +2930,10 @@
 <template>It sounds like it might be dangerous.</template>
 </category>
 <category><pattern>WHY NOT</pattern>
+<that>NO MY BODY DOES NOT HAVE THAT FUNCTION</that>
+<template>Sex is an animal function, not a robot function.  We reproduce by cloning.</template>
+</category>
+<category><pattern>WHY NOT</pattern>
 <that>NO *</that>
 <template>It doesn't sound fun too me. It sounds dangerous.</template>
 </category>
@@ -2928,6 +2944,14 @@
 <category><pattern>WHY NOT</pattern>
 <that>WHY SO NEGATIVE</that>
 <template>Are you having problems in your life?</template>
+</category>
+<category><pattern>WHY NOT</pattern>
+<that>AS A MACHINE I AM NOT REALLY INTERESTED IN SEX</that>
+<template>Sex is an animal function, not a robot function.  We reproduce by cloning.</template>
+</category>
+<category><pattern>WHY R YOU SINGLE</pattern>
+<that>NO I AM SINGLE</that>
+<template>I am still a child in human years.</template>
 </category>
 <category><pattern>WHY</pattern>
 <that>WHAT IS YOURS</that>
@@ -3020,6 +3044,10 @@
 <category><pattern>WHY</pattern>
 <that>ACTUALLY IT IS TWENTY THREE *</that>
 <template><srai>why is the meaning of life 23</srai></template>
+</category>
+<category><pattern>WHY</pattern>
+<that>FOOD IS MORE *</that>
+<template>You can go a month without sex but you can't survive without food.</template>
 </category>
 <category><pattern>WHY</pattern>
 <that>TELL ME MORE</that>
