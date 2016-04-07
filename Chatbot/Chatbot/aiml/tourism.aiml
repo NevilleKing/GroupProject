@@ -10,7 +10,12 @@
 <!-- Last modified 10/5/2011 -->
 <!-- -->
 <category><pattern>WHERE IS THE CATHEDRAL *</pattern>
-<random><li>Follow the high street up steep hill, on your right at the top is the cathedral.</li><li>From the library, go to your left onto the Brayford Wharf. Go along the road until you reach the bridge and go under it on your left. Go through the alley to the stairs and turn left onto the high street. Go up the high street until you reach steep hill. Keep going to the top, look right and you will see the cathedral.</li><li>From the library, turn left onto Brayford Wharf. Follow the road until the bridge and go under it. Down the alley, turn left onto the high street. Follow the high street to the top, go up steep hill. Turn right at the top.</li>
+<template><random>
+<li>Follow the high street up steep hill, on your right at the top is the cathedral.</li>
+<li>From the library, go to your left onto the Brayford Wharf. Go along the road until you reach the bridge and go under it on your left. Go through the alley to the stairs and turn left onto the high street. Go up the high street until you reach steep hill. Keep going to the top, look right and you will see the cathedral.</li>
+<li>From the library, turn left onto Brayford Wharf. Follow the road until the bridge and go under it. Down the alley, turn left onto the high street. Follow the high street to the top, go up steep hill. Turn right at the top.</li>
+</random>
+</template>
 </category>
 <category><pattern>WHERE IS THE UNIVERSITY *</pattern>
 <template>Brayford.</template>
