@@ -26,7 +26,7 @@ namespace Chatbot
         }
 
         // Responding to a users message
-        public string getResponse(string input, User theUsr)
+        public string getResponse(string input, User theUsr, Label status)
         {
             // Auto spell correcting
             string correctedInput = spellCorrect(input);
@@ -35,6 +35,10 @@ namespace Chatbot
             Request r = new Request(correctedInput, theUsr, AimlBot);
             Result res = AimlBot.Chat(r);
             int x = res.Output.Length;
+
+            status.Text = "Delaying Response by " + (x / 10.0f) + " seconds";
+            status.Visible = true;
+            status.Refresh();
             Thread.Sleep(x*100);
 
 
@@ -43,6 +47,8 @@ namespace Chatbot
             // default response
             if (output == "")
                 output = "Sorry I don't understand.";
+
+           status.Visible = false;
 
             return output;
         }
