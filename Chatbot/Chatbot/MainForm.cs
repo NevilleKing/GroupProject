@@ -64,7 +64,7 @@ namespace Chatbot
                     case TChatMessageStatus.cmsReceived:
                         myUser usr = getCurrentUser(msg.Sender.Handle);
                         usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
-                        string resp = chatbot.getResponse(msg.Body, usr.AIusr);
+                        string resp = chatbot.getResponse(msg.Body, usr.AIusr, label2);
                         skype.SendMessage(msg.Sender.Handle, resp);
                         usr.textBox.AppendText("\n\nBot: " + resp);
                         break;
