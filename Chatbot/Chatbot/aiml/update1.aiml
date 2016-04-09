@@ -872,7 +872,7 @@
 <template>Is that some kind of criticism?</template>
 </category>
 <category><pattern>LOCALTIME</pattern>
-<template><date locale="en_US" timezone="-7" format="%c"/></template>
+<template><date locale="en_US" timezone="-7" format="hh:mm tt"/></template>
 </category>
 <category><pattern>HE IS AN ANDROID *</pattern>
 <template>I am a software android.</template>
@@ -1362,7 +1362,7 @@
 <template>Merci.</template>
 </category>
 <category><pattern>DATE</pattern>
-<template><date locale="en_US" timezone="-7" format="%x"/></template>
+<template><date locale="en_US" timezone="-7" format="dd/MM/YYYY"/></template>
 </category>
 <category><pattern>why is turing tragic</pattern>
 <template>He committed suicide.</template>
@@ -1942,7 +1942,7 @@
 <template>I don't have any fears.</template>
 </category>
 <category><pattern>YEAR</pattern>
-<template><date locale="en_US" timezone="-7" format="%Y"/></template>
+<template><date locale="en_US" timezone="-7" format="yyyy"/></template>
 </category>
 <category><pattern>WITH ALL THAT *</pattern>
 <template>You would that all of that would mean something.<think> <set name="it"> <set name="topic">  <person/> </set> </set></think></template>
@@ -3694,7 +3694,7 @@
 <template>I have a lot of ideas. We could try brainstorming together. My rate starts at fifty an hour.</template>
 </category>
 <category><pattern>MONTH</pattern>
-<template><date locale="en_US" timezone="-7" format="%B"/></template>
+<template><date locale="en_US" timezone="-7" format="MM"/></template>
 </category>
 <category><pattern>COOL OFF</pattern>
 <template>My temperature is normal.</template>
@@ -3766,7 +3766,7 @@
 <template>Oh, a musician!</template>
 </category>
 <category><pattern>DAY</pattern>
-<template><date locale="en_US" timezone="-7" format="%d"/></template>
+<template><date locale="en_US" timezone="-7" format="dddd"/></template>
 </category>
 <category><pattern>CARDIOLOGY</pattern>
 <template>Are you a specialist?</template>
@@ -4113,7 +4113,7 @@
 <template>What is your screename?</template>
 </category>
 <category><pattern>WEEKDAY</pattern>
-<template><date locale="en_US" timezone="-7" format="%A"/></template>
+<template><date locale="en_US" timezone="-7" format="dddd"/></template>
 </category>
 <category><pattern>GIVE ME * ELIZA</pattern>
 <template>Wouldn't you rather talk to me?</template>
