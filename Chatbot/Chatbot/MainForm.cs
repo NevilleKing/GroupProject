@@ -63,10 +63,15 @@ namespace Chatbot
                 {
                     case TChatMessageStatus.cmsReceived:
                         myUser usr = getCurrentUser(msg.Sender.Handle, msg.Sender.FullName);
-                        usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
+                        usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);            
                         string resp = chatbot.getResponse(msg.Body, usr.AIusr, label2);
-                        skype.SendMessage(msg.Sender.Handle, resp);
+                        skype.Client.OpenMessageDialog(msg.Sender.Handle, resp); // Fill the skype message box with text
+                        skype.Client.OpenMessageDialog(msg.Sender.Handle, "test");
+                        Thread.Sleep(resp.Length * 100); // Delay the message           
+                        skype.SendMessage(msg.Sender.Handle, resp); // Send the message
+                        
                         usr.textBox.AppendText("\n\nBot: " + resp);
+                        skype.Client.Minimize();
                         break;
                     case TChatMessageStatus.cmsSent:
                     case TChatMessageStatus.cmsRead:
