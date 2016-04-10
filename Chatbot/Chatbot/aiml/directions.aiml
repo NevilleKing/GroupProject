@@ -11,7 +11,7 @@
 <template>
 <random>
 	<li>I've found some directions from the Internet:</li>
-	<li>I've found some directions from the Google:</li>
+	<li>I've found some directions from Google:</li>
 	<li>I've found some directions from the Net:</li>
 	<li>I've found some directions Online:</li>
 </random>
