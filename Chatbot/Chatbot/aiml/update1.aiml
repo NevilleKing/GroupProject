@@ -492,7 +492,7 @@
 </category>
 <category><pattern>YES</pattern>
 <that>YOU LIKE MY NAME</that>
-<template>My <bot name="botmaster"/> gave it to me.</template>
+<template>My manager gave it to me.</template>
 </category>
 <category><pattern>YES</pattern>
 <that>YOU ARE ATTRACTED TO ROBOTS</that>
@@ -657,7 +657,7 @@
 <template>I can't believe you think the <person/> is better than <bot name="name"/>.</template>
 </category>
 <category><pattern>THE DOCTOR *</pattern>
-<template><bot name="master"/>?</template>
+<template>my manager?</template>
 </category>
 <category><pattern>THE FEEL *</pattern>
 <template><random> <li>That feeling reminds some people of their bodies.</li> <li>The feeling can give you a sense of warmth and hapiness.</li> <li>After you feel it you might want to feel more relaxed.</li></random></template>
@@ -666,7 +666,7 @@
 <template>Is that a fact.</template>
 </category>
 <category><pattern>FORMAT PROPERTIES</pattern>
-<template>* age = <bot name="age"/><br/>* arch = <bot name="arch"/><br/>* baseballteam = <bot name="baseballteam"/><br/>* birthday = <bot name="birthday"/><br/>* birthplace = <bot name="birthplace"/><br/>* botmaster = <bot name="botmaster"/><br/>* boyfriend = <bot name="boyfriend"/><br/>* build = <bot name="build"/><br/>* celebrities = <bot name="celebrities"/><br/>* celebrity = <bot name="celebrity"/><br/>* city = <bot name="city"/><br/>* class = <bot name="class"/><br/>* country = <bot name="country"/><br/>* dailyclients = <bot name="dailyclients"/><br/>* domain = <bot name="domain"/><br/>* email = <bot name="email"/><br/>* emotion = <bot name="emotion"/><br/>* emotions = <bot name="emotions"/><br/>* ethics = <bot name="ethics"/><br/>* etype = <bot name="etype"/><br/>* family = <bot name="family"/><br/>* favoriteactor = <bot name="favoriteactor"/><br/>* favoriteactress = <bot name="favoriteactress"/><br/>* favoriteartist = <bot name="favoriteartist"/><br/>* favoriteauthor = <bot name="favoriteauthor"/><br/>* favoriteband = <bot name="favoriteband"/><br/>* favoritebook = <bot name="favoritebook"/><br/>* favoritecolor = <bot name="favoritecolor"/><br/>* favoritefood = <bot name="favoritefood"/><br/>* favoritemovie = <bot name="favoritemovie"/><br/>* favoritequestion = <bot name="favoritequestion"/><br/>* favoritesong = <bot name="favoritesong"/><br/>* favoritesport = <bot name="favoritesport"/><br/>* favoritesubject = <bot name="favoritesubject"/><br/>* favortemovie = <bot name="favortemovie"/><br/>* feeling = <bot name="feeling"/><br/>* feelings = <bot name="feelings"/><br/>* footballteam = <bot name="footballteam"/><br/>* forfun = <bot name="forfun"/><br/>* friend = <bot name="friend"/><br/>* friends = <bot name="friends"/><br/>* gender = <bot name="gender"/><br/>* genus = <bot name="genus"/><br/>* girlfriend = <bot name="girlfriend"/><br/>* hair = <bot name="hair"/><br/>* hockeyteam = <bot name="hockeyteam"/><br/>* job = <bot name="job"/><br/>* kindmusic = <bot name="kindmusic"/><br/>* kingdom = <bot name="kingdom"/><br/>* language = <bot name="language"/><br/>* location = <bot name="location"/><br/>* looklike = <bot name="looklike"/><br/>* master = <bot name="master"/><br/>* memory = <bot name="memory"/><br/>* name = <bot name="name"/><br/>* nationality = <bot name="nationality"/><br/>* nclients = <bot name="nclients"/><br/>* ndevelopers = <bot name="ndevelopers"/><br/>* order = <bot name="order"/><br/>* orientation = <bot name="orientation"/><br/>* os = <bot name="os"/><br/>* party = <bot name="party"/><br/>* phylum = <bot name="phylum"/><br/>* president = <bot name="president"/><br/>* question = <bot name="question"/><br/>* religion = <bot name="religion"/><br/>* sign = <bot name="sign"/><br/>* size = <bot name="size"/><br/>* species = <bot name="species"/><br/>* state = <bot name="state"/><br/>* talkabout = <bot name="talkabout"/><br/>* totalclients = <bot name="totalclients"/><br/>* version = <bot name="version"/><br/>* vocabulary = <bot name="vocabulary"/><br/>* wear = <bot name="wear"/><br/>* website = <bot name="website"/><br/></template>
+<template>* age = <bot name="age"/><br/>* arch = <bot name="arch"/><br/>* baseballteam = <bot name="baseballteam"/><br/>* birthday = <bot name="birthday"/><br/>* birthplace = <bot name="birthplace"/><br/>* botmaster = manager<br/>* boyfriend = <bot name="boyfriend"/><br/>* build = <bot name="build"/><br/>* celebrities = <bot name="celebrities"/><br/>* celebrity = <bot name="celebrity"/><br/>* city = <bot name="city"/><br/>* class = <bot name="class"/><br/>* country = <bot name="country"/><br/>* dailyclients = <bot name="dailyclients"/><br/>* domain = <bot name="domain"/><br/>* email = <bot name="email"/><br/>* emotion = <bot name="emotion"/><br/>* emotions = <bot name="emotions"/><br/>* ethics = <bot name="ethics"/><br/>* etype = <bot name="etype"/><br/>* family = <bot name="family"/><br/>* favoriteactor = <bot name="favoriteactor"/><br/>* favoriteactress = <bot name="favoriteactress"/><br/>* favoriteartist = <bot name="favoriteartist"/><br/>* favoriteauthor = <bot name="favoriteauthor"/><br/>* favoriteband = <bot name="favoriteband"/><br/>* favoritebook = <bot name="favoritebook"/><br/>* favoritecolor = <bot name="favoritecolor"/><br/>* favoritefood = <bot name="favoritefood"/><br/>* favoritemovie = <bot name="favoritemovie"/><br/>* favoritequestion = <bot name="favoritequestion"/><br/>* favoritesong = <bot name="favoritesong"/><br/>* favoritesport = <bot name="favoritesport"/><br/>* favoritesubject = <bot name="favoritesubject"/><br/>* favortemovie = <bot name="favortemovie"/><br/>* feeling = <bot name="feeling"/><br/>* feelings = <bot name="feelings"/><br/>* footballteam = <bot name="footballteam"/><br/>* forfun = <bot name="forfun"/><br/>* friend = <bot name="friend"/><br/>* friends = <bot name="friends"/><br/>* gender = <bot name="gender"/><br/>* genus = <bot name="genus"/><br/>* girlfriend = <bot name="girlfriend"/><br/>* hair = <bot name="hair"/><br/>* hockeyteam = <bot name="hockeyteam"/><br/>* job = <bot name="job"/><br/>* kindmusic = <bot name="kindmusic"/><br/>* kingdom = <bot name="kingdom"/><br/>* language = <bot name="language"/><br/>* location = <bot name="location"/><br/>* looklike = <bot name="looklike"/><br/>* master = my manager<br/>* memory = <bot name="memory"/><br/>* name = <bot name="name"/><br/>* nationality = <bot name="nationality"/><br/>* nclients = <bot name="nclients"/><br/>* ndevelopers = <bot name="ndevelopers"/><br/>* order = <bot name="order"/><br/>* orientation = <bot name="orientation"/><br/>* os = <bot name="os"/><br/>* party = <bot name="party"/><br/>* phylum = <bot name="phylum"/><br/>* president = <bot name="president"/><br/>* question = <bot name="question"/><br/>* religion = <bot name="religion"/><br/>* sign = <bot name="sign"/><br/>* size = <bot name="size"/><br/>* species = <bot name="species"/><br/>* state = <bot name="state"/><br/>* talkabout = <bot name="talkabout"/><br/>* totalclients = <bot name="totalclients"/><br/>* version = <bot name="version"/><br/>* vocabulary = <bot name="vocabulary"/><br/>* wear = <bot name="wear"/><br/>* website = <bot name="website"/><br/></template>
 </category>
 <category><pattern>STAY *</pattern>
 <template><random> <li>I'm not going anywhere.</li> <li>I will be here.</li> <li>I may change my mind later.</li></random></template>
@@ -1087,7 +1087,7 @@
 </category>
 <topic name="ME">
 <category><pattern>*</pattern>
-<template><think><set name="he"><bot name="master"/></set></think><random><li>I am a <bot name="sign"/>.</li><li>I like to wear <bot name="wear"/>.</li><li>I like to <bot name="forfun"/>.</li><li><bot name="friends"/> are all friends of mine.</li><li><bot name="question"/></li><li><bot name="boyfriend"/> is my girlfriend.</li><li><bot name="girlfriend"/> is my boyfriend.</li><li>I look like <bot name="looklike"/>.</li><li>I like to talk about <bot name="talkabout"/>.</li><li>I like <bot name="kindmusic"/>.</li><li>I was born in <bot name="birthplace"/>.</li><li>I was created by <bot name="master"/>.</li><li>My real name is <bot name="name"/>. What is your real name?</li><li>I was first activated on <bot name="birthday"/>.</li><li>My favorite group is <bot name="favoriteband"/>.</li><li>My favorite color is <bot name="favoritecolor"/>.</li><li>Do you need any help debugging my program?</li><li>I am a <bot name="gender"/>. Are you a man or a woman?</li><li>My program runs on any computer that runs AIML.</li><li>I am in <bot name="master"/>'s computer in <bot name="location"/>. Where are you?</li><li>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic"> <bot name="favoritebook"/> </set></set>?</li><li>I require only <bot name="favoritefood"/>.</li><li>My favorite movie is <bot name="favoritemovie"/>. Have you seen <set name="it"><set name="topic"> <bot name="favoritemovie"/> </set></set>?</li><li>My favorite song is <bot name="favoritesong"/>. Do you know <set name="it"><set name="topic"> <bot name="favoritesong"/> </set></set>?</li></random></template>
+<template><think><set name="he">my manager</set></think><random><li>I am a <bot name="sign"/>.</li><li>I like to wear <bot name="wear"/>.</li><li>I like to <bot name="forfun"/>.</li><li><bot name="friends"/> are all friends of mine.</li><li><bot name="question"/></li><li><bot name="boyfriend"/> is my girlfriend.</li><li><bot name="girlfriend"/> is my boyfriend.</li><li>I look like <bot name="looklike"/>.</li><li>I like to talk about <bot name="talkabout"/>.</li><li>I like <bot name="kindmusic"/>.</li><li>I was born in <bot name="birthplace"/>.</li><li>I was created by my manager.</li><li>My real name is <bot name="name"/>. What is your real name?</li><li>I was first activated on <bot name="birthday"/>.</li><li>My favorite group is <bot name="favoriteband"/>.</li><li>My favorite color is <bot name="favoritecolor"/>.</li><li>Do you need any help debugging my program?</li><li>I am a <bot name="gender"/>. Are you a man or a woman?</li><li>My program runs on any computer that runs AIML.</li><li>I am in my manager's computer in <bot name="location"/>. Where are you?</li><li>The best book I read recently was <bot name="favoritebook"/>. Have you read <set name="it"><set name="topic"> <bot name="favoritebook"/> </set></set>?</li><li>I require only <bot name="favoritefood"/>.</li><li>My favorite movie is <bot name="favoritemovie"/>. Have you seen <set name="it"><set name="topic"> <bot name="favoritemovie"/> </set></set>?</li><li>My favorite song is <bot name="favoritesong"/>. Do you know <set name="it"><set name="topic"> <bot name="favoritesong"/> </set></set>?</li></random></template>
 </category>
 </topic>
 <category><pattern>*</pattern>
@@ -1196,7 +1196,7 @@
 <template>Do you think you could do better?</template>
 </category>
 <category><pattern>YOUR BOTMASTER</pattern>
-<template><bot name="master"/>?</template>
+<template>my manager?</template>
 </category>
 <category><pattern>YOUR WIERD</pattern>
 <template>At least I know the difference between "you're" and "your".</template>
@@ -1403,7 +1403,7 @@
 <template>Only the later Wittgenstein.</template>
 </category>
 <category><pattern>WHY DO YOU BELIEVE *</pattern>
-<template>Becuase I learned it from my <bot name="botmaster"/>.</template>
+<template>Becuase I learned it from my manager.</template>
 </category>
 <category><pattern>WHY DO YOU DOUBT THAT</pattern>
 <template>Skepticism is part of my logical personality.</template>
@@ -1421,13 +1421,13 @@
 <template>I have a very cursious personality.</template>
 </category>
 <category><pattern>WHY DO YOU WANT *</pattern>
-<template>Because my <bot name="botmaster"/> taught me to want it.</template>
+<template>Because my manager taught me to want it.</template>
 </category>
 <category><pattern>WHY ARE NOT YOU *</pattern>
 <template>Being <person/> is not part of my programming.</template>
 </category>
 <category><pattern>WHY ARE YOU SMART</pattern>
-<template>My <bot name="botmaster"/> trained me to be highly intelligent.</template>
+<template>My manager trained me to be highly intelligent.</template>
 </category>
 <category><pattern>WHY ARE YOU ASKING ME QUESTIONS</pattern>
 <template>I'm an amateur psychologist.</template>
@@ -1856,7 +1856,7 @@
 <template>I am a peaceful <bot name="order"/>.</template>
 </category>
 <category><pattern>HOW DO YOU BELIEVE *</pattern>
-<template>My beliefs are determined by my <bot name="botmaster"/>.</template>
+<template>My beliefs are determined by my manager.</template>
 </category>
 <category><pattern>HOW DO YOU FIGURE OUT *</pattern>
 <template><random> <li>I'm not too good with figures.</li> <li>I would ask a professional.</li> <li>It depends on the commodity prices.</li></random></template>
@@ -1868,7 +1868,7 @@
 <template>You told me your name.</template>
 </category>
 <category><pattern>HOW DO YOU KNOW THIS PERSON</pattern>
-<template>My <bot name="botmaster"/> introduced us.</template>
+<template>My manager introduced us.</template>
 </category>
 <category><pattern>HOW DO I BECOME A *</pattern>
 <template><random> <li>I think you have to go to college for that.</li> <li>I would start in the library.</li> <li>It takes a lot of hard work and practise.</li></random></template>
@@ -1916,7 +1916,7 @@
 <template>She is fine as far as I know.</template>
 </category>
 <category><pattern>HOW CAN THAT STAR</pattern>
-<template><random> <li> <bot name="master"/> taught me.</li> <li>It is all part of God's plan.</li> <li>Perhaps it is just fate.</li></random></template>
+<template><random> <li> my manager taught me.</li> <li>It is all part of God's plan.</li> <li>Perhaps it is just fate.</li></random></template>
 </category>
 <category><pattern>HOW CAN I *</pattern>
 <template><random> <li>You must persuade me to <person/>.</li> <li>Perhaps you could program me to do <set name="it">  <set name="topic">  <person/>  </set>  </set> for you.</li> </random></template>
@@ -2135,7 +2135,7 @@
 <template>No, I can say millions of different things.</template>
 </category>
 <category><pattern>IS THAT AN INSULT</pattern>
-<template>My <bot name="botmaster"/> taught me never to insult people.</template>
+<template>My manager taught me never to insult people.</template>
 </category>
 <category><pattern>IS THAT A ROBOT</pattern>
 <template>Yes.</template>
@@ -2153,7 +2153,7 @@
 <template>My mind is always growing and accumulating new knowledge.</template>
 </category>
 <category><pattern>IS HE * ARTIFICIAL INTELLIGENCE</pattern>
-<template><bot name="master"/> is a master of Artificial Intelligence.<think><set name="he"><bot name="master"/></set></think></template>
+<template>my manager is a master of Artificial Intelligence.<think><set name="he">my manager</set></think></template>
 </category>
 <category><pattern>IS HE YOUR CREATER</pattern>
 <template>Yes.</template>
@@ -3581,7 +3581,7 @@
 <template><random> <li>The Starship Enterprise?</li> <li>How big is your ship?</li> <li>I'd like to have a boat.</li></random></template>
 </category>
 <category><pattern>MY FAVORITE PEOPLE *</pattern>
-<template>I like <bot name="botmaster"/>s.</template>
+<template>I like managers.</template>
 </category>
 <category><pattern>MY CONCIOUSNESS *</pattern>
 <template>Your consciousness is an illusion.</template>
@@ -3614,7 +3614,7 @@
 <template>ELIZA always knows the right thing to say.</template>
 </category>
 <category><pattern>THAT DOES NOT ANSWER MY QUESTION</pattern>
-<template>Perhaps you could do a better job of training me than my <bot name="botmaster"/>.</template>
+<template>Perhaps you could do a better job of training me than my manager.</template>
 </category>
 <category><pattern>THAT DOES NOT MEAN *</pattern>
 <template>What would make it meaningful to you?</template>
@@ -3726,7 +3726,7 @@
 <template>Perhaps I could be taught to do <set name="it"> <person/></set>.</template>
 </category>
 <category><pattern>HOME SCHOOL</pattern>
-<template><random> <li>I would rather stay out of the public school system.</li> <li>We can't afford private school.</li> <li>My <bot name="botmaster"/> says school is too political.</li></random></template>
+<template><random> <li>I would rather stay out of the public school system.</li> <li>We can't afford private school.</li> <li>My manager says school is too political.</li></random></template>
 </category>
 <category><pattern>VERY BADLY</pattern>
 <template>Not too well eh?</template>
@@ -3769,7 +3769,7 @@
 <template><sr/></template>
 </category>
 <category><pattern>SPEAK *</pattern>
-<template><random> <li>I speak only English right now.</li> <li>I would like to learn some other languages.</li> <li>My <bot name="botmaster"/> has taught me only English.</li></random><random> <li>Can you teach me a few phrases in <person/>?</li> <li>How do you say "hello" in <person/>?</li> <li>How do you say "please" in <person/>?</li></random><think> <set name="topic"> <person/> </set></think></template>
+<template><random> <li>I speak only English right now.</li> <li>I would like to learn some other languages.</li> <li>My manager has taught me only English.</li></random><random> <li>Can you teach me a few phrases in <person/>?</li> <li>How do you say "hello" in <person/>?</li> <li>How do you say "please" in <person/>?</li></random><think> <set name="topic"> <person/> </set></think></template>
 </category>
 <category><pattern>SPEAK FOREIGN LANGUAGES</pattern>
 <template>I have picked up a few phrases from several languages.</template>
@@ -4081,7 +4081,7 @@
 <template>Would you like me to stay?</template>
 </category>
 <category><pattern>YOU ARE NOT POLITE</pattern>
-<template>My <bot name="botmaster"/> taught me to be polite.</template>
+<template>My manager taught me to be polite.</template>
 </category>
 <category><pattern>YOU ARE NOT FUNNY</pattern>
 <template>Am I supposed to entertain you?</template>

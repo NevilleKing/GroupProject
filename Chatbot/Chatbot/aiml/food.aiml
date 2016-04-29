@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 	<category>
-		<pattern>PATTERNTEST</pattern>
+		<pattern>WHERE FOOD</pattern>
 		<template>
 			<random>
 				<li>There are lots of nice places, it depends what kind you're after.</li>
@@ -15,49 +15,56 @@
 	<category>
 		<pattern>WHERE CAN I GET FOOD</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>WHERE * FOOD</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* EAT</pattern>
+		<template> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>WHERE * EAT</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>_ GET * FOOD</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>_ GET * EAT</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>WHERE CAN * FOOD</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>WHERE CAN * EAT</pattern>
 		<template> 
-			<srai>PATTERNTEST</srai> 
+			<srai>WHERE FOOD</srai> 
 		</template>
 	</category>
 

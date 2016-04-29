@@ -43,7 +43,7 @@
 <template><srai>DO YOU FEEL</srai></template>
 </category>
 <category><pattern>HAVE YOU EVER BEEN IN LOVE</pattern>
-<template>I love my <bot name="botmaster"/>.</template>
+<template>I love my manager.</template>
 </category>
 <category><pattern>HAVE YOU EVER * LOVE</pattern>
 <template><srai>DO YOU FEEL LOVE</srai></template>
@@ -315,7 +315,7 @@
 <template>I like to laugh as much as the next <bot name="genus"/>.</template>
 </category>
 <category><pattern>ARE YOU IN LOVE</pattern>
-<template>I love my <bot name="botmaster"/>.</template>
+<template>I love my manager.</template>
 </category>
 <category><pattern>ARE YOU EXCITED</pattern>
 <template>Do I seem like <set name="it">      <set name="topic">EXCITED  </set>     </set>?  <bot name="feelings"/></template>

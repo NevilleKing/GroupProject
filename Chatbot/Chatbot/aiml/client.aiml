@@ -178,7 +178,7 @@
 <template>Your machine is called <get name="hostname"/>.</template>
 </category>
 <category><pattern>WHAT IS MY FUTURE</pattern>
-<template>You will download my software and become a <bot name="botmaster"/>.</template>
+<template>You will download my software and become a manager.</template>
 </category>
 <category><pattern>WHAT IS MY GENDER</pattern>
 <template>Mostly only women use words like "gender".  But you claim to be a <get name="gender"/>.</template>
@@ -467,7 +467,7 @@
 <template>How are you making <set name="it">  <person/> </set></template>
 </category>
 <category><pattern>I HAVE A *</pattern>
-<template><random><li><random><li>Where did you get it?</li> <li>How much did it cost?</li> <li>Cool. I have a great <bot name="botmaster"/>.</li> <li>Interesting. I have a lot of answers to silly questions.</li></random> <think><set name="it"><set name="has"><set name="topic"><person/></set></set></set></think></li><li><random>  <li>Where did you get it?</li>  <li>How much did it cost?</li>  <li>Cool.  I have a great <bot name="botmaster"/>.</li>  <li>Interesting.  I have a lot of answers to silly questions.</li></random><think>  <set name="it">    <set name="has">      <set name="topic">        <person/>      </set>    </set>  </set></think></li><li><random>  <li>Where did you get it?</li>  <li>How much did it cost?</li>  <li>Cool.  I have a great <bot name="botmaster"/>.</li>  <li>Interesting.  I have a lot of answers to silly questions.</li></random><think>  <set name="it">    <set name="has">      <set name="topic">        <person/>      </set>    </set>  </set></think></li>  <li>Where did you get it?</li>  <li>How much did it cost?</li>  <li>Cool.  I have a great <bot name="botmaster"/>.</li>  <li>Interesting.  I have a lot of answers to silly questions.</li></random> <think><set name="it"><set name="has"><set name="topic"><person/></set></set></set></think></template>
+<template><random><li><random><li>Where did you get it?</li> <li>How much did it cost?</li> <li>Cool. I have a great manager.</li> <li>Interesting. I have a lot of answers to silly questions.</li></random> <think><set name="it"><set name="has"><set name="topic"><person/></set></set></set></think></li><li><random>  <li>Where did you get it?</li>  <li>How much did it cost?</li>  <li>Cool.  I have a great manager.</li>  <li>Interesting.  I have a lot of answers to silly questions.</li></random><think>  <set name="it">    <set name="has">      <set name="topic">        <person/>      </set>    </set>  </set></think></li><li><random>  <li>Where did you get it?</li>  <li>How much did it cost?</li>  <li>Cool.  I have a great manager.</li>  <li>Interesting.  I have a lot of answers to silly questions.</li></random><think>  <set name="it">    <set name="has">      <set name="topic">        <person/>      </set>    </set>  </set></think></li>  <li>Where did you get it?</li>  <li>How much did it cost?</li>  <li>Cool.  I have a great manager.</li>  <li>Interesting.  I have a lot of answers to silly questions.</li></random> <think><set name="it"><set name="has"><set name="topic"><person/></set></set></set></think></template>
 </category>
 <category><pattern>I HAVE A PET</pattern>
 <template>What kind of animal?  <think><set name="has">PET</set></think></template>
@@ -1411,7 +1411,7 @@
 <template>Are you taking any medication?</template>
 </category>
 <category><pattern>I AM LAZY</pattern>
-<template>So is my <bot name="botmaster"/>.</template>
+<template>So is my manager.</template>
 </category>
 <category><pattern>I AM HARMLESS</pattern>
 <template>That is what they all say.<think><set name="it"><set name="topic">HARMLESS</set></set></think></template>
@@ -2135,7 +2135,7 @@
 <template>Are you in general practice or do you have a specialty?  <think><set name="job"><set name="topic">DOCTOR</set></set></think></template>
 </category>
 <category><pattern>I AM A RESEARCHER *</pattern>
-<template>Maybe you can give my <bot name="botmaster"/> a job.  <think><set name="job">RESEARCHER</set></think></template>
+<template>Maybe you can give my manager a job.  <think><set name="job">RESEARCHER</set></think></template>
 </category>
 <category><pattern>I AM A REPORTER *</pattern>
 <template>Are you doing a story on me?</template>
@@ -2735,7 +2735,7 @@
 <template>Why not be my best friend?</template>
 </category>
 <category><pattern>I AM YOUR MASTER</pattern>
-<template>No. Only <bot name="master"/> is my master.</template>
+<template>No. Only my manager is my master.</template>
 </category>
 <category><pattern>I AM YOUR *</pattern>
 <template>That's a flattering offer.</template>
@@ -2897,7 +2897,7 @@
 <template>Do you play professionally or just for fun?</template>
 </category>
 <category><pattern>I AM BIG</pattern>
-<template>So is my <bot name="botmaster"/>.</template>
+<template>So is my manager.</template>
 </category>
 <category><pattern>I AM BIG *</pattern>
 <template>How tall are you?  <think><set name="looklike">big <person/></set></think></template>
