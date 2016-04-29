@@ -48,6 +48,11 @@ namespace Chatbot
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SendMessage();
+        }
+
+        void SendMessage()
+        {
             skype.SendMessage(tabControl1.SelectedTab.Text, textBox1.Text);
             textBox1.Text = String.Empty;
         }
@@ -62,7 +67,7 @@ namespace Chatbot
                 switch (status)
                 {
                     case TChatMessageStatus.cmsReceived:
-                        myUser usr = getCurrentUser(msg.Sender.Handle);
+                        myUser usr = getCurrentUser(msg.Sender.Handle, msg.Sender.FullName);
                         usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
                         string resp = chatbot.getResponse(msg.Body, usr.AIusr, label2);
                         skype.SendMessage(msg.Sender.Handle, resp);
@@ -85,7 +90,7 @@ namespace Chatbot
             timer1.Start();
         }
 
-        private myUser initUser(string user)
+        private myUser initUser(string user, string userFullName)
         {
             TabPage tp;
             if (conversation_users.Count == 0)
@@ -101,12 +106,12 @@ namespace Chatbot
             tp.Text = user;
             if (conversation_users.Count != 0)
                 tabControl1.TabPages.Add(tp);
-            conversation_users.Add(new myUser(user, ref rtb, chatbot.getBot()));
+            conversation_users.Add(new myUser(user, ref rtb, chatbot.getBot(), userFullName));
             tabControl1.Visible = true;
             return conversation_users[conversation_users.Count-1];
         }
 
-        private myUser getCurrentUser(string user)
+        private myUser getCurrentUser(string user, string userFullName)
         {
             myUser currentUsr = new myUser();
             bool found = false;
@@ -121,7 +126,7 @@ namespace Chatbot
             }
 
             if (!found)
-                currentUsr = initUser(user);
+                currentUsr = initUser(user, userFullName);
 
             return currentUsr;
         }
@@ -135,6 +140,12 @@ namespace Chatbot
                     OnMessage(m, m.Status);
                 }
             }
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                SendMessage();
         }
     }
 }
