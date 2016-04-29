@@ -1,32 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 	<category>
+		<pattern>PATTERNTEST</pattern>
+		<template>
+			<random>
+				<li>There are lots of nice places, it depends what kind you're after.</li>
+				<li>Well, what kind of food do you want?</li>
+				<li>There are a lot of places around lincoln, what kind of food are you after?</li>
+				<li>Are you after any specific types of food?</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
 		<pattern>WHERE CAN I GET FOOD</pattern>
-		<template>There are lots of nice places, it depends what kind you're after.</template>
+		<template> 
+			<srai>PATTERNTEST</srai> 
+		</template>
 	</category>
 	
 	<category>
 		<pattern>WHERE * FOOD</pattern>
 		<template> 
-			<srai>WHERE CAN I GET FOOD</srai> 
+			<srai>PATTERNTEST</srai> 
 		</template>
 	</category>
 	
 	<category>
 		<pattern>WHERE * EAT</pattern>
 		<template> 
-			<srai>WHERE CAN I GET FOOD</srai> 
+			<srai>PATTERNTEST</srai> 
 		</template>
 	</category>
 	
 	<category>
-		<pattern> FAMILY * </pattern>
+		<pattern>_ GET * FOOD</pattern>
 		<template> 
-			<srai>WHERE CAN I GET FOOD</srai> 
+			<srai>PATTERNTEST</srai> 
 		</template>
-	</category> 
-
+	</category>
 	
+	<category>
+		<pattern>_ GET * EAT</pattern>
+		<template> 
+			<srai>PATTERNTEST</srai> 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>WHERE CAN * FOOD</pattern>
+		<template> 
+			<srai>PATTERNTEST</srai> 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>WHERE CAN * EAT</pattern>
+		<template> 
+			<srai>PATTERNTEST</srai> 
+		</template>
+	</category>
+
 	
 	<category>
 		<pattern>JAPANESE</pattern>
