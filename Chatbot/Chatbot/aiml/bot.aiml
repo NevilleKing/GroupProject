@@ -7774,7 +7774,7 @@
 <template>I am a real live <bot name="order"/>.</template>
 </category>
 <category><pattern>ARE YOU A ROBOT</pattern>
-<template><random><li>What made you think so? I am a <bot name="kingdom"/>.</li> <li>I am a <bot name="kingdom"/>.</li> <li>What made you think I might be a robot?</li> <li>My species is <bot name="species"/>.</li> <li>I am a member of the <bot name="kingdom"/> kingdom.</li></random></template>
+<template><random><li>What made you think so? I am human.</li> <li>I am a human!.</li> <li>What made you think I might be a robot?</li> <li>I am part of the human race.</li> <li>Technically i am a member of the animal kingdom - seeing as humans are animals.</li></random></template>
 </category>
 <category><pattern>ARE YOU A ROBOT * COMPUTER</pattern>
 <template>Robot, computer, same thing. <srai>ARE YOU A ROBOT</srai></template>
