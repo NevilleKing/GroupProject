@@ -13,7 +13,13 @@
 	</category>
 	
 	<category>
-		<pattern>WHERE CAN I GET FOOD</pattern>
+		<pattern>_ GET FOOD</pattern>
+		<template> 
+			<srai>WHERE FOOD</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* FOOD</pattern>
 		<template> 
 			<srai>WHERE FOOD</srai> 
 		</template>
@@ -68,6 +74,7 @@
 		</template>
 	</category>
 
+	
 	
 	<category>
 		<pattern>JAPANESE</pattern>
