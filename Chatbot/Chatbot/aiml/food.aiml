@@ -35,7 +35,25 @@
 		<template> 
 			<srai>WHERE FOOD</srai> 
 		</template>
+	</category>
+	<category>
+		<pattern>_ EAT</pattern>
+		<template> 
+			<srai>WHERE FOOD</srai> 
+		</template>
 	</category>	
+	<category>
+		<pattern>_ SOMEWHERE NICE TO EAT</pattern>
+		<template> 
+			<srai>WHERE FOOD</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ NICE * EAT</pattern>
+		<template> 
+			<srai>WHERE FOOD</srai> 
+		</template>
+	</category>
 	<category>
 		<pattern>WHERE * EAT</pattern>
 		<template> 
