@@ -48,6 +48,11 @@ namespace Chatbot
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SendMessage();
+        }
+
+        void SendMessage()
+        {
             skype.SendMessage(tabControl1.SelectedTab.Text, textBox1.Text);
             textBox1.Text = String.Empty;
         }
@@ -135,6 +140,12 @@ namespace Chatbot
                     OnMessage(m, m.Status);
                 }
             }
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                SendMessage();
         }
     }
 }
