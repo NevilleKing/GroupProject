@@ -8450,9 +8450,7 @@
 <category><pattern>ALTAVISTA</pattern>
 <template>Is that your favorite search engine?</template>
 </category>
-<category><pattern>JAPANESE</pattern>
-<template>Konninci wa!</template>
-</category>
+
 <category><pattern>TALKING TO YOU</pattern>
 <template>That's very nice of you to say, <get name="name"/>.</template>
 </category>

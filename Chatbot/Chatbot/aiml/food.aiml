@@ -1,226 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 	<category>
-		<pattern>WHERE FOOD</pattern>
+		<pattern>DFOO3</pattern>
 		<template>
 			<random>
-				<li>There are lots of nice places to eat, it depends what kind you're after.</li>
+				<li>There are lots of nice places to eat, it depends what kind of food you're after.</li>
 				<li>Well, what kind of food do you want?</li>
 				<li>There are a lot of places to eat around lincoln, what kind of food are you after?</li>
-				<li>Are you after any specific types of food?</li>
+				<li>Are you after any specific types of food?</li> 
 			</random>
 		</template>
 	</category>
 	
 	<category>
+		<pattern>_ FOOD * LIKE *</pattern>
+		<template> My favourite food is definately pizza. How about you?</template>
+	</category>
+	<category>
+		<pattern>_ FOOD * LIKE</pattern>
+		<template> My favourite food is definately pizza. How about you?</template>
+	</category>
+	
+	<category>
+		<pattern>_ FOOD *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ FOOD</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
 		<pattern>_ GET FOOD</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>* FOOD</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>WHERE * FOOD</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>* EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EAT *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>_ SOMEWHERE NICE TO EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ NICE * EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>WHERE * EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>_ GET * FOOD</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>_ GET * EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>WHERE CAN * FOOD</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>	
 	<category>
 		<pattern>WHERE CAN * EAT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>* PECKISH</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ PECKISH</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PECKISH *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>I * HUNGRY</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>* HUNGRY</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ HUNGRY</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ HUNGRY *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ RESTAURANT *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ RESTAURANT</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ RESTAURANTS</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ RESTAURANTS *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ CAFE</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ CAFE *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ CAFES</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ CAFES *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ LUNCH</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ LUNCH *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ BREAKFAST</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ BREAKFAST *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ DINNER</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ DINNER *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ SUPPER</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 	<category>
 		<pattern>_ SUPPER *</pattern>
 		<template> 
-			<srai>WHERE FOOD</srai> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ MEAL</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ MEAL *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ SNACK</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ SNACK *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ GRUB</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ GRUB *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
 		</template>
 	</category>
 
-	
-	
 	<category>
 		<pattern>JAPANESE</pattern>
-		<template>Wagamama is good.</template>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama is good - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ JAPANESE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama is good - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
 	</category>
+	<category>
+		<pattern>_ JAPANESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama is good - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>		
+		
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			WAGAMAMA *
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>Well ok then</template>
+	</category>
+	
 </aiml>

@@ -37,7 +37,7 @@ namespace Chatbot
             Result res = AimlBot.Chat(r);
             int x = res.Output.Length;
 
-            status.Text = "Delaying Response by " + (x / 10.0f) + " seconds";
+            status.Text = "Delaying Response by " + (x / 15.0f) + " seconds";
             status.Visible = true;
             status.Refresh();
             Thread.Sleep(x*100);
