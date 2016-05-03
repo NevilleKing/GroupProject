@@ -3603,10 +3603,6 @@
 <template><think><set name="it"><set name="topic"><person/></set></set></think>Interesting line of work.</template>
 </category>
 <category><pattern>*</pattern>
-<that>WHAT IS *</that>
-<template><srai><star/> is <thatstar/></srai></template>
-</category>
-<category><pattern>*</pattern>
 <that>WHAT COUNTRY DO YOU LIVE IN</that>
 <template><srai>I am in <star/> </srai></template>
 </category>
