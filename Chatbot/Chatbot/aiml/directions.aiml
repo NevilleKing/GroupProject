@@ -3,7 +3,7 @@
 
 <category><pattern>DIRECTIONS *</pattern>
 <template>
-<srai>DIRECTIONTXT</srai> <map><star/></map>
+<srai>DIRECTIONTXT</srai> <map><star/>,%20Lincoln,%20Lincolnshire,%20United%20Kingdom</map>
 </template>
 </category>
 

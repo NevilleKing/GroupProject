@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+<category><pattern>PLACERADIUS *</pattern>
+<template>
+<srai>PLACERADIUSTXT <star/></srai> <place radius="20"><star/>,Lincoln,GB</place>
+</template>
+</category>
+
+<category><pattern>PLACERADIUSTXT *</pattern>
+<template>
+<random>
+	<li>Here are some places around <star/>:</li>
+	<li>I've found some places around <star/>:</li>
+	<li>Nearby <star/> I've found:</li>
+</random>
+</template>
+</category>
+
+</aiml>
