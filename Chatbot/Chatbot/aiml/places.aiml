@@ -3,7 +3,7 @@
 
 <category><pattern>PLACERADIUS *</pattern>
 <template>
-<srai>PLACERADIUSTXT <star/></srai> <place radius="20"><star/>,Lincoln,GB</place>
+<srai>PLACERADIUSTXT <star/></srai> <place type="nearby" radius="20"><star/>,Lincoln,GB</place>
 </template>
 </category>
 
@@ -14,6 +14,12 @@
 	<li>I've found some places around <star/>:</li>
 	<li>Nearby <star/> I've found:</li>
 </random>
+</template>
+</category>
+
+<category><pattern>OPENING TIMES *</pattern>
+<template>
+<place type="openingtimes"><star/>,Lincoln,GB</place>
 </template>
 </category>
 
