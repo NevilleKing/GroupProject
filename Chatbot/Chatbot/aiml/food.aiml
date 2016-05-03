@@ -3292,135 +3292,135 @@
 	<!-- ==================================================times================================================================ -->
 	<category>
 		<pattern>_ OPENING TIMES *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ OPENING TIMES</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ OPENING TIME *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ OPEN TIMES</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ OPEN TIMES *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ OPEN TIME *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ TIME * OPEN</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ TIME * OPENS</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ TIME * OPEN *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ CLOSING TIMES *</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if you search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ CLOSING TIMES</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if you search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ CLOSE TIMES</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ CLOSE TIMES *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ CLOSE TIME *</pattern>
-		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ TIME * CLOSE</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ TIME * CLOSE *</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ TIME * CLOSES</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * CLOSE</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * OPEN</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * CLOSE *</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * OPEN *</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * CLOSES</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * OPENS</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * CLOSES</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>WHEN * OPENS</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>	
 	<category>
 		<pattern>_ WHEN * CLOSE</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * OPEN</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * CLOSE *</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * OPEN *</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * CLOSES</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * OPENS</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * CLOSES</pattern>
-		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	<category>
 		<pattern>_ WHEN * OPENS</pattern>
-		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+		<template><srai>OPENING TIMES <star/></srai></template>
 	</category>
 	
 	<!-- ==================================================SOMEWHERE ELSE================================================================ -->
@@ -3651,1050 +3651,6 @@
 			_ EXPENSIVE *
 		</that>
 		<template>Well perhaps you could be more specific with what you want?</template>
-	</category>
-	
-	<!-- ==================================================WHERE IS================================================================ -->
-	<category>
-		<pattern>WHERE IS SUBWAY</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ SUBWAY IS</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ SUBWAY IS *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS SUBWAY</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS SUBWAYS</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * SUBWAY</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * SUBWAYS</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * SUBWAY</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * SUBWAY</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * SUBWAY S</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * SUBWAYS</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * SUBWAY</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * SUBWAY *</pattern>
-		<template><srai>SUBWAY</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS NANDO</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS NANDOS</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS NANDOS *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ NANDOS IS</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ NANDOS IS *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS NANDOS</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS NANDO *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * NANDO</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * NANDO *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * NANDOS</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * NANDOS</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * NANDO *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * NANDO</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * NANDO *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * NANDO S</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ NANDO S *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * NANDOS</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * NANDO</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * NANDO *</pattern>
-		<template><srai>NANDOS</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS BURGER KING</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS BURGER KING</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS BURGER KING *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ BURGER KING IS</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ BURGER KING IS *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS BURGER KING *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * BURGER KING</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * BURGER KING *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * BURGER KINGS</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * BURGER KINGS</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * BURGER KING *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * BURGER KING</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * BURGER KING *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * BURGER KING S</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ BURGER KING S *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * BURGER KINGS</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * BURGER KING</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * BURGER KING *</pattern>
-		<template><srai>BURGER KING</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS DOMINOE</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ DOMINOES IS</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ DOMINOES IS *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS DOMINOES</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS DOMINOES *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS DOMINOES</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS DOMINOE *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * DOMINOE</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * DOMINOE *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * DOMINOES</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * DOMINOE</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * DOMINOE *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * DOMINOE</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * DOMINOES *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * DOMINOE S</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ DOMINOE *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * DOMINOES</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * DOMINOE</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * DOMINOE *</pattern>
-		<template><srai>DOMINOES</srai></template>
-	</category>
-	
-	
-	<category>
-		<pattern>WHERE IS KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ KFC IS</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ KFC IS *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * KFC S</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * KFC</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * KFC *</pattern>
-		<template><srai>KFC</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS PIZZA HUT</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ PIZZA HUT IS</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ PIZZA HUT IS *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS PIZZA HUT</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PIZZA HUT</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * PIZZA HUT</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PIZZA HUT</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PIZZA HUT S</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * PIZZA HUT</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * PIZZA HUT *</pattern>
-		<template><srai>PIZZA HUT</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS PAPA JOHN</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ PAPA JOHNS IS</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ PAPA JOHNS IS *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS PAPA JOHNS</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS PAPA JOHNS *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS PAPA JOHNS</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS PAPA JOHN *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PAPA JOHN</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PAPA JOHN *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PAPA JOHNS</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * PAPA JOHN</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * PAPA JOHN *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PAPA JOHN</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PAPA JOHNS *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PAPA JOHN S</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ PAPA JOHN *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PAPA JOHNS</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * PAPA JOHN</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * PAPA JOHN *</pattern>
-		<template><srai>PAPA JOHNS</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS PIZZA EXPRESS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ PIZZA EXPRESS IS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ PIZZA EXPRESS IS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS PIZZA EXPRESS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PIZZA EXPRESS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * PIZZA EXPRESS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PIZZA EXPRESS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * PIZZA EXPRESS S</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * PIZZA EXPRESS</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * PIZZA EXPRESS *</pattern>
-		<template><srai>PIZZA EXPRESS</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS TOBY CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ TOBY CARVERY IS</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ TOBY CARVERY IS *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS TOBY CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * TOBY CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * TOBYS CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * TOBY CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TOBY CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TOBY CARVERY S</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TOBY CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * TOBYS CARVERY</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * TOBY CARVERY *</pattern>
-		<template><srai>TOBY CARVERY</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS CHIMICHANGA</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ CHIMICHANGA IS</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ CHIMICHANGA IS *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS CHIMICHANGA</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS CHIMICHANGA *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS CHIMICHANGAS</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS CHIMICHANGA *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * CHIMICHANGA</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * CHIMICHANGA *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * CHIMICHANGAS</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * CHIMICHANGA</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * CHIMICHANGA *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * CHIMICHANGA</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * CHIMICHANGAS *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * CHIMICHANGA S</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ CHIMICHANGA *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * CHIMICHANGAS</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * CHIMICHANGA</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * CHIMICHANGA *</pattern>
-		<template><srai>CHIMICHANGA</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS HANDMADE BURGER CO</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ HANDMADE BURGER CO IS</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ HANDMADE BURGER CO IS *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS HANDMADE BURGER CO</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS HANDMADE BURGER CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS HANDMADE BURGER *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS HANDMADE BURGER CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * HANDMADE BURGER CO</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * HANDMADE BURGER CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * HANDMADE BURGERS *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * HANDMADE BURGER *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * HAND MADE BURGER *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * HANDMADE BURGER CO</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * HANDMADE BURGER CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * HANDMADE BURGER CO</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * HANDMADE BURGERS CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * HANDMADE BURGER *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ HANDMADE BURGER CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * HANDMADE BURGER CO</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * HANDMADE BURGERS *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * HANDMADE BURGER CO *</pattern>
-		<template><srai>HANDMADE BURGER CO</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ TACO BELL IS</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ TACO BELL IS *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TACO BELL S</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * TACO BELL</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * TACO BELL *</pattern>
-		<template><srai>TACO BELL</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS GREGG</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ GREGGS IS</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ GREGGS IS *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS GREGGS</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS GREGGS *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS GREGGS</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS GREGG *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * GREGG</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * GREGG *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * GREGGS</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * GREGGS</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * GREGG *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * GREGG</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * GREGGS *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * GREGG S</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ GREGG *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * GREGGS</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * GREGG</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * GREGG *</pattern>
-		<template><srai>GREGGS</srai></template>
-	</category>
-	
-	<category>
-		<pattern>WHERE IS STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ STOKES IS</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ STOKES IS *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ IS STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE IS STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>WHERE * STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ WHERE * STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * STOKES S</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW _ STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>HOW * STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * STOKES</pattern>
-		<template><srai>STOKES</srai></template>
-	</category>
-	<category>
-		<pattern>_ HOW * STOKES *</pattern>
-		<template><srai>STOKES</srai></template>
 	</category>
 	
 </aiml>

@@ -38,6 +38,42 @@
 </template>
 </category>
 
+<category><pattern>WHAT IS AROUND *</pattern>
+<template>
+<srai>PLACERADIUS <star/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS NEAR *</pattern>
+<template>
+<srai>PLACERADIUS <star/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS CLOSE TO *</pattern>
+<template>
+<srai>PLACERADIUS <star/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS AROUND ME</pattern>
+<template>
+<srai>PLACERADIUS university</srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS AROUND HERE</pattern>
+<template>
+<srai>PLACERADIUS university</srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS NEARBY *</pattern>
+<template>
+<srai>PLACERADIUS <star/></srai>
+</template>
+</category>
+
 <category><pattern>OPENING TIMES *</pattern>
 <template>
 <place type="openingtimes"><star/>,Lincoln,GB</place>
