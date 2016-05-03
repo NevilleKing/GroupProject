@@ -4,6 +4,8 @@
 <category><pattern>DIRECTIONS *</pattern>
 <template>
 <srai>DIRECTIONTXT</srai> <place type="directions"><star/>,Lincoln,GB</place>
+<think><set name="last-place"><star/></set></think>
+<think><set name="topic">PLACES</set></think>
 </template>
 </category>
 
@@ -21,6 +23,8 @@
 <category><pattern>PLACERADIUS *</pattern>
 <template>
 <srai>PLACERADIUSTXT <star/></srai> <place type="nearby" radius="20"><star/>,Lincoln,GB</place>
+<think><set name="last-place"><star/></set></think>
+<think><set name="topic">PLACES</set></think>
 </template>
 </category>
 
@@ -37,7 +41,115 @@
 <category><pattern>OPENING TIMES *</pattern>
 <template>
 <place type="openingtimes"><star/>,Lincoln,GB</place>
+<think><set name="last-place"><star/></set></think>
+<think><set name="topic">PLACES</set></think>
 </template>
 </category>
+
+<topic name="PLACES">
+
+	<category><pattern>HOW DO I GET THERE</pattern>
+	<template>
+	<srai>DIRECTIONS <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>WHAT IS AROUND THERE</pattern>
+	<template>
+	<srai>PLACERADIUS <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>WHEN DOES IT OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>WHEN DOES IT CLOSE</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>IS IT OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>IS IT OPEN NOW</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>IS IT CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>IS IT CLOSED NOW</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+	<category><pattern>WHAT ARE THE OPENING TIMES</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>ARE THEY OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>ARE THEY CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>ARE THEY OPEN NOW</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>ARE THEY CLOSED NOW</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN ARE THEY OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN ARE THEY CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN DO THEY OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN DO THEY CLOSE</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+
+</topic>
 
 </aiml>
