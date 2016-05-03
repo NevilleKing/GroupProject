@@ -265,6 +265,30 @@
 		</template>
 	</category>
 	<category>
+		<pattern>_ STARVING</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ STARVING *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ FAMISHED</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ FAMISHED *</pattern>
+		<template> 
+			<srai>DFOO3</srai> 
+		</template>
+	</category>
+	<category>
 		<pattern>_ RESTAURANT *</pattern>
 		<template> 
 			<srai>DFOO3</srai> 
