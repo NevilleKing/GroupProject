@@ -396,8 +396,6 @@
 			<srai>RINKD3</srai> 
 		</template>
 	</category>
-	<category>
-
 	<!-- The <that> tag provides the context for the convo, it checks the last thing said by the bot for the words inside the tag and if they are not found then that catergory wont work -->
 	<!-- ============================================================PUBS==================================================================== -->	
 	<category>
@@ -648,7 +646,8 @@
 		<pattern>I * CLUB *</pattern>
 		<that>
 			_ DRINK *
-		</that>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
 	</category>	
 	<category>
 		<pattern>CLUB *</pattern>
