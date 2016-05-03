@@ -5,7 +5,7 @@
 <template>
 <srai>DIRECTIONTXT</srai> <place type="directions"><star/>,Lincoln,GB</place>
 <think><set name="last-place"><star/></set></think>
-<think><set name="topic">PLACES</set></think>
+<think><set name="topic">places</set></think>
 </template>
 </category>
 
@@ -24,7 +24,7 @@
 <template>
 <srai>PLACERADIUSTXT <star/></srai> <place type="nearby" radius="20"><star/>,Lincoln,GB</place>
 <think><set name="last-place"><star/></set></think>
-<think><set name="topic">PLACES</set></think>
+<think><set name="topic">places</set></think>
 </template>
 </category>
 
@@ -42,11 +42,11 @@
 <template>
 <place type="openingtimes"><star/>,Lincoln,GB</place>
 <think><set name="last-place"><star/></set></think>
-<think><set name="topic">PLACES</set></think>
+<think><set name="topic">places</set></think>
 </template>
 </category>
 
-<topic name="PLACES">
+<topic name="places">
 
 	<category><pattern>HOW DO I GET THERE</pattern>
 	<template>
@@ -55,6 +55,18 @@
 	</category>
 
 	<category><pattern>WHAT IS AROUND THERE</pattern>
+	<template>
+	<srai>PLACERADIUS <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT ELSE IS AROUND THERE</pattern>
+	<template>
+	<srai>PLACERADIUS <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT ELSE IS THERE</pattern>
 	<template>
 	<srai>PLACERADIUS <get name="last-place"/></srai>
 	</template>

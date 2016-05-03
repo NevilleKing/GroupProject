@@ -96,7 +96,7 @@ namespace Chatbot
             // Gets the text between the start of "placeHolder" and "&" from the HTML, this should be the corrected spelling with added '+' signs.
             string correctedSpelling = getBetween("a" + placeHolder, "a", "&");
             // Replaces the '+' in the HTML with spaces so it can be correctly read by the bot.
-            correctedSpelling.Replace('+', ' ');
+            correctedSpelling = correctedSpelling.Replace('+', ' ');
 
             // removes %3f bug
             string result = removePunctuation(correctedSpelling);
