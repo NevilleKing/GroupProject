@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using AIMLbot;
 using System.Net;
+using System.Text.RegularExpressions;
 
 namespace Chatbot
 {
@@ -50,7 +51,37 @@ namespace Chatbot
 
            status.Visible = false;
 
-            return output;
+            // removing reduction bug from the string
+            string finalOutput = removeREDUCTION(output);
+
+            return finalOutput;
+        }
+
+
+        public string removeREDUCTION(string input)
+        {
+            // remove reduction with a fullstop after
+            string pattern2 = "REDUCTION.";
+            string replace2 = "";
+            string result2 = Regex.Replace(input, pattern2, replace2, RegexOptions.IgnoreCase);
+
+            // removes reduction on its own
+            string pattern3 = "REDUCTION";
+            string replace3 = "";
+            string result3 = Regex.Replace(result2, pattern3, replace3, RegexOptions.IgnoreCase);
+
+
+            return result3;
+        }
+        public string removePunctuation(string input)
+        {
+
+            // replaces the %3f that google adds instead of question marks to a question mark again
+            string pattern = "%3f";
+            string replace = "?";
+            string result = Regex.Replace(input, pattern, replace, RegexOptions.IgnoreCase);
+
+            return result;
         }
 
         // Uses google search "Did you mean?" function to correct spelling mistakes on user inputs by parsing the HTML for the correct spelling.
@@ -67,7 +98,10 @@ namespace Chatbot
             // Replaces the '+' in the HTML with spaces so it can be correctly read by the bot.
             correctedSpelling.Replace('+', ' ');
 
-            return correctedSpelling;
+            // removes %3f bug
+            string result = removePunctuation(correctedSpelling);
+
+            return result;
         }
 
 

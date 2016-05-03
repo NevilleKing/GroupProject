@@ -1057,7 +1057,7 @@
 <template>Mirror mirror on the wall, is <get name="name"/> the best human of all?</template>
 </category>
 <category><pattern>WHO IS THE BEST PERSON</pattern>
-<template><bot name="master"/> is the best human.</template>
+<template>my manager is the best human.</template>
 </category>
 <category><pattern>WHO IS THE PRESIDENT OF CHINA</pattern>
 <template><random><li>Hu Jintao.</li><li>China does not have an elected President.</li></random></template>

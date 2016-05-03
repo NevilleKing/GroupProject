@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<!--Tourism category questions -->
+<!--Navigation directions -->
+<!-- -->
+<category><pattern>PLACES TO STAY *</pattern>
+<template>Are you have any specified demands (Hotels, Bed &amp; breakfast,self-catering, camping)? please choose one</template>
+</category>
+<category><pattern>HOTELS *</pattern>
+<template>There are couple of Holiday Inn's: one is cheeper(Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on brayfor pool bay. Which one you want directions for?</template>
+</category>
+<category><pattern>EXPRESS *</pattern>
+<template>Holliday Inn Express located approximate 300 meters to south-west of Minerva buiding. Good pointer would be a Lincoln tank memorial located on round-about nearby.</template>
+</category>
+<category><pattern>HOLIDAY INN *</pattern>
+<template>Located on the other side of brayford pool.</template>
+</category>
+<category><pattern>WHERE TO STAY *</pattern>
+<template>Which place are you looking for? There are many options available: Hotel, self-catering, Bed &amp; breakfast, camping?</template>
+</category>
+<category><pattern>B &amp; B *</pattern>
+<template>Cathedral View Guest House located at cathedral quarter.</template>
+</category>
+<category><pattern>BED AND BREAKFAST *</pattern>
+<template>Longdales House located at cathedral quarter, has cycles for rent.</template>
+</category>
+<category><pattern>BED &amp; BREAKFAST * </pattern>
+<template>Bishop Grosseteste University Halls located at cathedral quarter.</template>
+</category>
+<category><pattern>HOTEL *</pattern>
+<template>Caste hotel located on top of the hill at cathedral quarter area</template>
+</category>
+<category><pattern>SELF-CATTERING *</pattern>
+<template><random>
+<li>Grayz Apartments located at cathedral quarter.</li>
+<li>Museum Court located at cultural quarter which is north of river Witham and southern to cathedral.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>SELF CATTERING *</pattern>
+<template>Bail Mews located at cathedral quarter</template>
+</category>
+<category><pattern>CAMPING * </pattern>
+<template>Lincoln yurts are 3-10 miles away.</template>
+</category>
+<category><pattern>CARAVAN *</pattern>
+<template>I have no information about this option due to its unpopularity among tourists.</template>
+</category>
+</aiml>
