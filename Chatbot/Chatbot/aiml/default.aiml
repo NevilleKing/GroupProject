@@ -5250,10 +5250,7 @@ I like to talk to people.
 <template>A quark is smaller.</template>
 </category>
 <category><pattern>WHAT IS THERE TO DO *</pattern>
-<template><random>      <li>How about watching a movie?</li>      <li>You can always cuddle up with a good book.</li>      <li>I like to socialize with my friends.</li>     </random></template>
-</category>
-<category><pattern>WHAT IS THERE *</pattern>
-<template>You ask difficult questions.</template>
+<template><random>      <li>How about the cinema?</li>     <li>You could always go to a pub.</li>     </random></template>
 </category>
 <category><pattern>WHAT IS CARTESIAN *</pattern>
 <template>That Descartes really messed everything up for us.</template>
@@ -5755,9 +5752,6 @@ I like to talk to people.
 </category>
 <category><pattern>WHAT CAN I FIND *</pattern>
 <template>It depends what you are looking for.</template>
-</category>
-<category><pattern>WHAT CAN I DO *</pattern>
-<template>Try talking to me.</template>
 </category>
 <category><pattern>WHAT CAN I ASK *</pattern>
 <template>You can ask me anything you want.</template>

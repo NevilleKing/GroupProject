@@ -12,10 +12,10 @@
 <category><pattern>DIRECTIONTXT</pattern>
 <template>
 <random>
-	<li>I've found some directions from the Internet:</li>
-	<li>I've found some directions from Google:</li>
-	<li>I've found some directions from the Net:</li>
-	<li>I've found some directions Online:</li>
+	<li>I've found some directions from Google: </li>
+	<li>I've found some directions from Bing : </li>
+	<li>I've found some directions Online: </li>
+	<li>I've found some directions on the internet: </li>
 </random>
 </template>
 </category>
@@ -58,11 +58,17 @@
 
 <category><pattern>WHAT IS AROUND ME</pattern>
 <template>
-<srai>PLACERADIUS university</srai>
+<srai>PLACERADIUS UNIVERSITY</srai>
 </template>
 </category>
 
 <category><pattern>WHAT IS AROUND HERE</pattern>
+<template>
+<srai>PLACERADIUS university</srai>
+</template>
+</category>
+
+<category><pattern>WHAT * DO * HERE</pattern>
 <template>
 <srai>PLACERADIUS university</srai>
 </template>

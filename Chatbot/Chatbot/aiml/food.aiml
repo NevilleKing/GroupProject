@@ -448,6 +448,34 @@
 	<!-- The <that> tag provides the context for the convo, it checks the last thing said by the bot for the words inside the tag and if they are not found then that catergory wont work -->
 	<!-- ============================================================Japanese==================================================================== -->	
 	<category>
+		<pattern>JAPAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ JAPAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ JAPAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>JAPAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>
+	<category>
 		<pattern>JAPANESE</pattern>
 		<that>
 			_ FOOD *
@@ -556,6 +584,34 @@
 	
 	<!-- ============================================================ FRENCH ==================================================================== -->	
 	<category>
+		<pattern>FRANCE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ FRANCE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ FRANCE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>FRANCE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>	
+	<category>
 		<pattern>FRENCH</pattern>
 		<that>
 			_ FOOD *
@@ -594,75 +650,110 @@
 	<category>
 		<pattern>_ YES *</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>YES *</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>YES _</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>_ YES</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>YES</pattern>
 		<that>
-			BRASSERIE *
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>OK</pattern>
 		<that>
-			BRASSERIE *
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>OK *</pattern>
 		<that>
-			BRASSERIE *
+			_ BRASSERIE *
 		</that>
 		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
 	</category>
 	<category>
 		<pattern>NO *</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
+		</that>
+		<template>Well ok then</template>
+	</category>
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ BRASSERIE *
 		</that>
 		<template>Well ok then</template>
 	</category>
 	<category>
 		<pattern>*</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
 		</that>
 		<template>Ok then, it's not like its hard to find, with it being right next to the high street :D</template>
 	</category>
 	<category>
 		<pattern>* *</pattern>
 		<that>
-			BRASSERIE _
+			_ BRASSERIE *
 		</that>
 		<template>Ok then, it's not like its hard to find, with it being right next to the high street :D</template>
 	</category>
 	
 	<!-- ======================================================= Chinese ========================================================================= -->	
+	<category>
+		<pattern>CHINA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ CHINA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ CHINA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>CHINA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
 	<category>
 		<pattern>CHINESE</pattern>
 		<that>
@@ -784,6 +875,13 @@
 		<template>Well ok then, any other questions?</template>
 	</category>
 	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
 		<pattern>*</pattern>
 		<that>
 			_ BEIJING *
@@ -799,6 +897,35 @@
 	</category>
 	
 	<!-- =======================================================INDIAN========================================================================= -->	
+	
+	<category>
+		<pattern>INDIA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ INDIA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ INDIA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>INDIA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>	
 	<category>
 		<pattern>INDIAN</pattern>
 		<that>
@@ -899,6 +1026,13 @@
 		<template>Well ok then, any other questions?</template>
 	</category>
 	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
 		<pattern>*</pattern>
 		<that>
 			_ SPICE *
@@ -914,6 +1048,34 @@
 	</category>
 	
 	<!-- =======================================================ITALY========================================================================= -->	
+	<category>
+		<pattern>ITALY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ ITALY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ ITALY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>ITALY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>	
 	<category>
 		<pattern>ITALIAN</pattern>
 		<that>
@@ -1014,6 +1176,13 @@
 		<template>Well ok then, any other questions?</template>
 	</category>
 	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
 		<pattern>*</pattern>
 		<that>
 			_ ITALIAN *
@@ -1029,6 +1198,34 @@
 	</category>
 	
 	<!-- ======================================================= MEXICAN ========================================================================= -->	
+	<category>
+		<pattern>MEXICO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ MEXICO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ MEXICO</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>MEXICO</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
 	<category>
 		<pattern>MEXICAN</pattern>
 		<that>
@@ -1075,75 +1272,110 @@
 	<category>
 		<pattern>_ YES *</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>YES *</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>YES _</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>_ YES</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>YES</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>OK</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>OK *</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>It's on the other side of the Brayford, you can't miss it.</template>
 	</category>
 	<category>
 		<pattern>NO *</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			CHIMICHANGA *
 		</that>
 		<template>Well ok then, any other questions?</template>
 	</category>
 	<category>
 		<pattern>*</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
 	</category>
 	<category>
 		<pattern>* *</pattern>
 		<that>
-			_ CHIMICHANGA *
+			CHIMICHANGA *
 		</that>
 		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
 	</category>
 	
 	<!-- ======================================================= POLSKA ========================================================================= -->	
+	<category>
+		<pattern>POLAND *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>_ POLAND *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>_ POLAND</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>	
+	<category>
+		<pattern>POLAND</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
 	<category>
 		<pattern>POLISH</pattern>
 		<that>
@@ -1309,6 +1541,13 @@
 		<template>Well ok then, any other questions?</template>
 	</category>
 	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
 		<pattern>*</pattern>
 		<that>
 			_ MARINA *
@@ -1324,6 +1563,34 @@
 	</category>
 	
 	<!-- ======================================================= GREEK ========================================================================= -->	
+	<category>
+		<pattern>GREECE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ GREECE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ GREECE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>GREECE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
 	<category>
 		<pattern>GREEK</pattern>
 		<that>
@@ -1446,6 +1713,13 @@
 	</category>
 	<category>
 		<pattern>NO *</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>NO</pattern>
 		<that>
 			_ GABBY *
 		</that>
@@ -2753,6 +3027,18 @@
 			_ FOOD *
 		</that>
 		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ PIZZA *</pattern>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ PIZZA</pattern>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ PIZZAS</pattern>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
 	</category>	
 	<category>
 		<pattern>_ PIZZA</pattern>
@@ -3044,6 +3330,113 @@
 	</category>
 	
 	<!-- ======================================================= FISH & CHIPS ========================================================================= -->	
+	<category>
+		<pattern>ENGLISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>ENGLISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ ENGLISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ ENGLISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>ENGLAND</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>ENGLAND *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ ENGLAND *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ ENGLAND</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	
+	<category>
+		<pattern>BRITISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>BRITISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ BRITISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ BRITISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>_ BRIT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>_ BRIT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>BRIT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	
 	<category>
 		<pattern>FISH</pattern>
 		<that>
