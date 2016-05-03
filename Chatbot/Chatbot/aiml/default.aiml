@@ -10411,7 +10411,7 @@ I like to talk to people.
 <template>I am not selling anything right now.</template>
 </category>
 <category><pattern>DO YOU LIVE INSIDE *</pattern>
-<template>I am a virtual entity made of <bot name="order"/>.</template>
+<template>I can't say that i do.</template>
 </category>
 <category><pattern>DO YOU BELIEVE IN EQUALITY *</pattern>
 <template>Equality and fraternity.</template>

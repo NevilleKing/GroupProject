@@ -40,7 +40,7 @@ namespace Chatbot
             status.Text = "Delaying Response by " + (x / 15.0f) + " seconds";
             status.Visible = true;
             status.Refresh();
-            Thread.Sleep(x*100);
+            Thread.Sleep(x*150);
 
 
             string output = res.Output;
