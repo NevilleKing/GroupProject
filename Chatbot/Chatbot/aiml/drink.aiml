@@ -1,0 +1,4700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+	<category>
+		<pattern>RINKD3</pattern>
+		<template>
+			<random>
+				<!-- Any item in this list must contain the word drink for the rest of the file to work, and it should not be the first or last word of the item (i think) -->
+				<li>There are lots of nice places to drink, it depends what kind of place you're after.</li>
+				<li>Well, what kind of place do you want to drink at?</li>
+				<li>There are a lot of places to drink around lincoln, what kind of place are you after?</li>
+				<li>Any type of pub or bar you're specifically after?</li> 
+			</random>
+		</template>
+	</category>
+	
+	<!-- All the catergories work by feeding back to the very first catergory (RINKD3) above, they only activate if RINKD3 has been activated beforehand -->
+	<!-- Any sentence with the words 'drink' or whatever is below will activate the RINKD3 srai tag and call the above RINKD3 catergory -->
+	<category>
+		<pattern>_ DRINK * LIKE *</pattern>
+		<template> My favourite drink is definately coffee. How about you?</template>
+	</category>
+	<category>
+		<pattern>_ DRINK * LIKE</pattern>
+		<template> My favourite drink is definately coffee. How about you?</template>
+	</category>
+	
+	<category>
+		<pattern>_ FOOD *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ GET FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ GET SOME FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * FOOD *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>WHERE * FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>* EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EAT *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ SOMETHING * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ SOMEWHERE * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ NICE * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>WHERE * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ GET * FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ GET * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>WHERE CAN * FOOD</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>WHERE CAN * EAT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* PECKISH</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PECKISH</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PECKISH *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE PECKISH</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE PECKISH *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY PECKISH</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY PECKISH *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>I * HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE HUNGRY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ VERY HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ VERY HUNGRY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY HUNGRY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EXTREMELY HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EXTREMELY HUNGRY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY HUNGRY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ HUNGRY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ HUNGRY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ STARVING</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ STARVING *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ FAMISHED</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ FAMISHED *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ RESTAURANT *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ RESTAURANT</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ RESTAURANTS</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ RESTAURANTS *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CAFE</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CAFE *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CAFES</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CAFES *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DINER</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DINER *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DINERS</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DINERS *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ LUNCH</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ LUNCH *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BREAKFAST</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BREAKFAST *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DINNER</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DINNER *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ SUPPER</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ SUPPER *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ MEAL</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ MEAL *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ SNACK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ SNACK *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ GRUB</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ GRUB *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+
+	<!-- The <that> tag provides the context for the convo, it checks the last thing said by the bot for the words inside the tag and if they are not found then that catergory wont work -->
+	<!-- ============================================================Japanese==================================================================== -->	
+	<category>
+		<pattern>JAPANESE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ JAPANESE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ JAPANESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ JAPANESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>JAPANESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Wagamama has good food and reviews - and it's pretty much the only japanese restaurant in Lincoln. Would you like directions?</template>
+	</category>	
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			WAGAMAMA *
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			WAGAMAMA *
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			WAGAMAMA *
+		</that>
+		<template>It's just across the brayford, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>Well ok then</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>Ok then, it's not like its hard to find, it's right on the brayford and there's a massive sign :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			WAGAMAMA _
+		</that>
+		<template>K then, it's not like its hard to find, it's right on the brayford and there's a massive sign :D</template>
+	</category>
+	
+	<!-- ============================================================ FRENCH ==================================================================== -->	
+	<category>
+		<pattern>FRENCH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ FRENCH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ FRENCH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ FRENCH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>FRENCH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Cote Brasserie cooks good food and has nice reviews, would you like directions?</template>
+	</category>	
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			BRASSERIE *
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			BRASSERIE *
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			BRASSERIE *
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>Well ok then</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>Ok then, it's not like its hard to find, with it being right next to the high street :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			BRASSERIE _
+		</that>
+		<template>Ok then, it's not like its hard to find, with it being right next to the high street :D</template>
+	</category>
+	
+	<!-- ======================================================= Chinese ========================================================================= -->	
+	<category>
+		<pattern>CHINESE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CHINESE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CHINESE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ CHINESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * CHINESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>CHINESE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>CHINA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CHINA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CHINA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few chinese restaurants all over. Yo Yo in Beijing is good to eat in or takeaway and has really good food reviews - it's very close as well - would you like directions?</template>
+	</category>	
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>It's next to the Junxion student accommodation on the Brayford Wharf - right next to the University library.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being right next to the Uni library :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ BEIJING *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being right next to the Uni library :D</template>
+	</category>
+	
+	<!-- =======================================================INDIAN========================================================================= -->	
+	<category>
+		<pattern>INDIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ INDIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * INDIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ INDIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * INDIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>INDIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's quite a few Indian restaurants all over. Spice House is a good one and it's not too far away - would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>It's on the High street - the southern side, just past Dixon st.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the high street :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ SPICE *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the high street :D</template>
+	</category>
+	
+	<!-- =======================================================ITALY========================================================================= -->	
+	<category>
+		<pattern>ITALIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>ITALIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>		
+	<category>
+		<pattern>_ ITALIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * ITALIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ ITALIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * ITALIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Ask Italian cooks some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ ITALIAN *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	
+	<!-- ======================================================= MEXICAN ========================================================================= -->	
+	<category>
+		<pattern>MEXICAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>MEXICAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ MEXICAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * MEXICAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ MEXICAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * MEXICAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Chimichanga makes some good food, and it's really close too. Would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ CHIMICHANGA *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	
+	<!-- ======================================================= POLSKA ========================================================================= -->	
+	<category>
+		<pattern>POLISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>POLISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>POLSKA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>	
+	<category>
+		<pattern>_ POLSKA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>	
+	<category>
+		<pattern>_ POLSKA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>	
+	<category>
+		<pattern>_ POLISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * POLISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>_ POLISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>
+	<category>
+		<pattern>I * POLISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>I don't think there are any Polish restaurants in Lincoln - not any that i know of anyway... sorry about that. Perhaps you would like food from some place else?</template>
+	</category>	
+	
+	<!-- =======================================================THAI========================================================================= -->	
+	<category>
+		<pattern>THAI</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Thai Marina has nice reviews for the food, and it's really close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>THAI *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Thai Marina has nice reviews for the food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ THAI</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Thai Marina has nice reviews for the food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * THAI</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Thai Marina has nice reviews for the food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ THAI *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Thai Marina has nice reviews for the food, and it's really close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * THAI *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Thai Marina has nice reviews for the food, and it's really close too. Would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>It's on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ MARINA *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	
+	<!-- ======================================================= GREEK ========================================================================= -->	
+	<category>
+		<pattern>GREEK</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>GREEK *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ GREEK</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * GREEK</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ GREEK *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * GREEK *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>GREECE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>GREECE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ GREECE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ GREECE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There aren't many greek restaurants in lincoln, but Gabby's restaurant has good reviews about the food and isn't too far away, would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>It's on the High street, the southern side - just next to King street.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the high street :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ GABBY *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the high street :D</template>
+	</category>
+	
+	<!-- =======================================================MCDONALDS========================================================================= -->	
+	<category>
+		<pattern>MCDONALDS</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>	
+	<category>
+		<pattern>MCDONALD *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>_ MCDONALD *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>	
+	<category>
+		<pattern>_ MC DONALD *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>_ MCDONALDS</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * MCDONALDS</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>_ MCDONALDS *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>I * MCDONALDS *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	
+	<category>
+		<pattern>MC DONALDS</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>	
+	<category>
+		<pattern>_ DONALDS</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * DONALDS</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>_ DONALDS *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	<category>
+		<pattern>I * DONALDS *</pattern>
+		<template>There's one really close, it's right next to Tritton road roundabout.</template>
+	</category>
+	
+	<!-- =======================================================KFC========================================================================= -->	
+	<category>
+		<pattern>KFC</pattern>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ KFC</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * KFC</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ KFC *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * KFC *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ KFC *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>FRIED CHICKEN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's a KFC on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ FRIED CHICKEN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's a KFC on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ FRIED CHICKEN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's a KFC on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	
+	<!-- =========================================================DOMINOES ====================================================================== -->	
+	<category>
+		<pattern>DOMINOES</pattern>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ DOMINOES</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * DOMINOES</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ DOMINOES *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * DOMINOES *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ DOMINOES *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ DOMINOE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ DOMINOE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>DOMINOE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= pizza hut====================================================================== -->	
+	<category>
+		<pattern>PIZZA HUT</pattern>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ HUT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * HUT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ HUT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * HUT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ HUT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ HUT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ HUT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>HUT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	
+	<!-- =========================================================PAPA JOHNS SODIE POPS ====================================================================== -->	
+	<category>
+		<pattern>PAPA JOHNS</pattern>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ PAPA JOHNS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * PAPA JOHNS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ PAPA JOHN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ PAPA JOHN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>		
+	<category>
+		<pattern>_ PAPA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * PAPA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ PAPA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ PAPA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ PAPA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	<category>
+		<pattern>PAPA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - the southern side, just past Sewell's Walk. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= PIZZA EXPRESS ====================================================================== -->	
+	<category>
+		<pattern>PIZZA EXPRESS</pattern>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ PIZZA EXPRESS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * PIZZA EXPRESS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ PIZZAS EXPRESS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ EXPRESS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>I * EXPRESS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ EXPRESS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ EXPRESS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ EXPRESS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>EXPRESS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the High street - ther northern side close to steep hill. Anything other questions?</template>
+	</category>
+	
+	<!-- ======================================================= HANDMADE BURGER CO. ========================================================================= -->	
+	<category>
+		<pattern>HANDMADE BURGER CO</pattern>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>HANDMADE BURGER CO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HANDMADE BURGER CO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>HANDMADE BURGER</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>HANDMADE BURGER *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HANDMADE BURGER *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ HAND MADE BURGER *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HANDMADE BURGER</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * HANDMADE BURGER</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HANDMADE BURGER *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>I * HANDMADE BURGERS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>HAND MADE BURGERS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HAND MADE BURGERS CO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ HANDMADE BURGERS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>A family owned business - and it's really close. It's on the other side of the brayford, you can't miss it.</template>
+	</category>
+	
+	<!-- ========================================================= TOBY CARVERY ====================================================================== -->	
+	<category>
+		<pattern>TOBY CARVERY</pattern>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ CARVERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CARVERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CARVERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * CARVERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ CARVERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CARVERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CARVERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>CARVERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University - just across the road from the library. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= Subway ====================================================================== -->	
+	<category>
+		<pattern>SUBWAY</pattern>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>SUBWAYS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SUBWAYS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SUBWAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>SUB WAY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ SUB WAY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SUB WAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>		
+	<category>
+		<pattern>_ SUBWAY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * SUBWAY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SUBWAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * SUBWAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ SUBWAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SUBWAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SUBWAY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>SUBWAY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= Burger King ====================================================================== -->	
+	<category>
+		<pattern>BURGER KING</pattern>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>BURGERKING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BURGERKING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BURGERKING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>BURGER KING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ BURGER KING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BURGER KING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>		
+	<category>
+		<pattern>_ BURGER KING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * BURGER KING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BURGER KING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * BURGER KING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ BURGER KING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BURGER KING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BURGER KING</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	<category>
+		<pattern>BURGER KING *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one really close, it's basically right next to the University car park. Across the rope walk in the retail park. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= NANDOS ====================================================================== -->	
+	<category>
+		<pattern>NANDOS</pattern>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ NANDOS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * NANDOS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ NANDOS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>I * NANDOS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ NANDOS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ NANDO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ NANDO</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>NANDO *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	
+	<!-- ========================================================= TACO BELL ====================================================================== -->	
+	<category>
+		<pattern>TACO BELL</pattern>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>	
+	<category>
+		<pattern>_ TACO BELL</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * TACO BELL</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	<category>
+		<pattern>_ TACO BELL *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	<category>
+		<pattern>I * TACO BELL *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>	
+	<category>
+		<pattern>_ TACO BELL *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	<category>
+		<pattern>_ TACO BELL *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	<category>
+		<pattern>_ TACO BELL</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	<category>
+		<pattern>TACO BELL *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>There actually aren't any Taco Bells in lincoln... sorry about that. Would you like directions for food anywhere else?</template>
+	</category>
+	
+	<!-- ======================================================= GREGGS ========================================================================= -->	
+	<category>
+		<pattern>GREGGS</pattern>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ GREGG *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>GREGG *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ GREGGS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * GREGGS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ GREGGS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>I * GREGGS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ GREGGS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	
+	<!-- ======================================================= PATISSERIE VALERIE ========================================================================= -->	
+	<category>
+		<pattern>VALERIE</pattern>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ VALERIE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ PATISSERIE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ PATISSERIE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>PATISSERIE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>VALERIE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ VALERIES</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * VALERIES</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ VALERIES *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>I * VALERIES *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ VALERIES *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	
+	
+	<!-- ======================================================= CAFE ========================================================================= -->	
+	<category>
+		<pattern>CAFE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CAFE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CAFE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * CAFE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>STOKES</pattern>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	
+	<!-- ======================================================= CHIMICHANGA ========================================================================= -->	
+	<category>
+		<pattern>CHIMICHANGA</pattern>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ CHIMICHANGA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CHIMICHANGA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CHIMICHANGA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * CHIMICHANGA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ CHIMICHANGA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	
+	<!-- ======================================================= SPICY ========================================================================= -->	
+	<category>
+		<pattern>SPICY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Spicy food? I would recommend a Mexican place, or perhaps an Asian restaurant. Any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ SPICY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Spicy food? I would recommend a Mexican place, or perhaps an Asian restaurant. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * SPICY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Spicy food? I would recommend a Mexican place, or perhaps an Asian restaurant. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ SPICY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Spicy food? I would recommend a Mexican place, or perhaps an Asian restaurant. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * SPICY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Spicy food? I would recommend a Mexican place, or perhaps an Asian restaurant. Any of those sound good?</template>
+	</category>
+	
+	<!-- ======================================================= ASIAN ========================================================================= -->	
+	<category>
+		<pattern>ASIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Care to be more specific? Someplace like Wagamama - they have some great food. Or Chinese? Thai?</template>
+	</category>	
+	<category>
+		<pattern>_ ASIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Care to be more specific? Someplace like Wagamama - they have some great food. Or Chinese? Thai?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * ASIAN</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Care to be more specific? Someplace like Wagamama - they have some great food. Or Chinese? Thai?</template>
+	</category>
+	<category>
+		<pattern>_ ASIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Care to be more specific? Someplace like Wagamama - they have some great food. Or Chinese? Thai?</template>
+	</category>
+	<category>
+		<pattern>I * ASIAN *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Care to be more specific? Someplace like Wagamama - they have some great food. Or Chinese? Thai?</template>
+	</category>
+	
+	<!-- ======================================================= CHEAP ========================================================================= -->	
+	<category>
+		<pattern>CHEAP</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Plenty of cheap options to choose from: Greggs, Toby Carvery, most of the big chain restaurants have cheap food options too. Any take your fancy?</template>
+	</category>	
+	<category>
+		<pattern>_ CHEAP</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Plenty of cheap options to choose from: Greggs, Toby Carvery, most of the big chain restaurants have cheap food options too. Any take your fancy?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CHEAP</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Plenty of cheap options to choose from: Greggs, Toby Carvery, most of the big chain restaurants have cheap food options too. Any take your fancy?</template>
+	</category>
+	<category>
+		<pattern>_ CHEAP *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Plenty of cheap options to choose from: Greggs, Toby Carvery, most of the big chain restaurants have cheap food options too. Any take your fancy?</template>
+	</category>
+	<category>
+		<pattern>I * CHEAP *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Plenty of cheap options to choose from: Greggs, Toby Carvery, most of the big chain restaurants have cheap food options too. Any take your fancy?</template>
+	</category>
+	
+	<!-- ======================================================= Pizzas ========================================================================= -->	
+	<category>
+		<pattern>PIZZA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ PIZZA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * PIZZA</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ PIZZA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * PIZZA *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ PIZZAS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ PIZZAS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of pizza places to choose from, and they all make nice food. Dominoes, Pizza hut, Papa Johns - any of those sound good?</template>
+	</category>
+	
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ THERE ARE A LOT OF PIZZA *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO</pattern>
+		<that>
+			_ THERE ARE A LOT OF PIZZA *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ THERE ARE A LOT OF PIZZA *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	
+	<!-- ======================================================= BURGERS ========================================================================= -->	
+	<category>
+		<pattern>BURGER</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ BURGER</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * BURGER</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ BURGER *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * BURGER *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ BURGERS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ BURGERS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there are a lot of burger places to choose from, and they all make nice food. McDonalds, Burger King, Handmade Burger Co. - any of those sound good?</template>
+	</category>
+	
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ THERE ARE A LOT OF BURGER *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO</pattern>
+		<that>
+			_ THERE ARE A LOT OF BURGER *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ THERE ARE A LOT OF BURGER *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	
+	<!-- ======================================================= FANCY / EXPENSIVE / HIGH CLASS ========================================================================= -->	
+	<category>
+		<pattern>_ FANCY RESTAURANT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ FANCY RESTAURANT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>SOMEWHERE FANCY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE FANCY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE FANCY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>SOME WHERE FANCY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SOME WHERE FANCY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SOME WHERE FANCY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>	
+	<category>
+		<pattern>_ SOMEWHERE * FANCY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE EXPENSIVE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>HIGH CLASS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ HIGH CLASS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ HIGH CLASS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ MORE EXPENSIVE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ MORE EXPENSIVE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ HIGHER CLASS</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ HIGHER CLASS *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template><srai>FRENCH</srai></template>
+	</category>
+		
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	
+	<!-- ======================================================= FISH & CHIPS ========================================================================= -->	
+	<category>
+		<pattern>FISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>	
+	<category>
+		<pattern>_ FISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * FISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>_ FISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>I * FISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>_ FISH *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	<category>
+		<pattern>_ FISH</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>This is England remember, there's  a chippy on basically every corner, it's our national food! Today's Catch has good reviews and is pretty close by - want directions?</template>
+	</category>
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>It's very close to the brayford, towards the western side on Westbourne Grove.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ CATCH *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	
+	<!-- ======================================================= BAKERY ========================================================================= -->	
+	<category>
+		<pattern>BAKERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>	
+	<category>
+		<pattern>_ BAKERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * BAKERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>
+	<category>
+		<pattern>_ BAKERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>
+	<category>
+		<pattern>I * BAKERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>
+	<category>
+		<pattern>_ BAKERY *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>
+	<category>
+		<pattern>_ BAKERY</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there's always Greggs for a cheap food option, or there's Patisserie Valerie for a more expensive choice - either of those sound good??</template>
+	</category>
+	
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ VALERIE *
+		</that>
+		<template>Well?</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ VALERIE *
+		</that>
+		<template>Well?</template>
+	</category>
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ VALERIE *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	
+	<!-- =============================================================== Veggie ================================================================== -->
+	<category>
+		<pattern>_ VEGETARIAN</pattern>
+		<template>Mostly all places do vegetarian food options, but to know for sure you would have to search for yourself on google or go their directly.</template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIAN *</pattern>
+		<template>Mostly all places do vegetarian food options, but to know for sure you would have to search for yourself on google or go their directly.</template>
+	</category>
+	<category>
+		<pattern>VEGETARIAN *</pattern>
+		<template>Mostly all places do vegetarian food options, but to know for sure you would have to search for yourself on google or go their directly.</template>
+	</category>
+	<category>
+		<pattern>VEGETARIAN FOOD *</pattern>
+		<template>Mostly all places do vegetarian food options, but to know for sure you would have to search for yourself on google or go their directly.</template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIAN FOOD</pattern>
+		<template>Mostly all places do vegetarian food options, but to know for sure you would have to search for yourself on google or go their directly.</template>
+	</category>
+	<category>
+		<pattern>_ VEGETARIAN FOOD</pattern>
+		<template>Mostly all places do vegetarian food options, but to know for sure you would have to search for yourself on google or go their directly.</template>
+	</category>
+	
+	<category>
+		<pattern>_ VEGAN</pattern>
+		<template>I'm afraid i don't know anywhere that does just vegan food, you would have to google for it yourself.</template>
+	</category>
+	<category>
+		<pattern>_ VEGAN *</pattern>
+		<template>I'm afraid i don't know anywhere that does just vegan food, you would have to google for it yourself.</template>
+	</category>
+	<category>
+		<pattern>VEGAN *</pattern>
+		<template>I'm afraid i don't know anywhere that does just vegan food, you would have to google for it yourself.</template>
+	</category>
+	<category>
+		<pattern>VEGAN FOOD *</pattern>
+		<template>I'm afraid i don't know anywhere that does just vegan food, you would have to google for it yourself.</template>
+	</category>
+	<category>
+		<pattern>_ VEGAN FOOD</pattern>
+		<template>I'm afraid i don't know anywhere that does just vegan food, you would have to google for it yourself.</template>
+	</category>
+	<category>
+		<pattern>_ VEGAN FOOD</pattern>
+		<template>I'm afraid i don't know anywhere that does just vegan food, you would have to google for it yourself.</template>
+	</category>
+
+	<!-- ==================================================times================================================================ -->
+	<category>
+		<pattern>_ OPENING TIMES *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ OPENING TIMES</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ OPENING TIME *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ OPEN TIMES</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ OPEN TIMES *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ OPEN TIME *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ TIME * OPEN</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ TIME * OPENS</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ TIME * OPEN *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ CLOSING TIMES *</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if you search on google.</template>
+	</category>
+	<category>
+		<pattern>_ CLOSING TIMES</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if you search on google.</template>
+	</category>
+	<category>
+		<pattern>_ CLOSE TIMES</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ CLOSE TIMES *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ CLOSE TIME *</pattern>
+		<template>I'm afraid i don't know the opening times myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ TIME * CLOSE</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ TIME * CLOSE *</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ TIME * CLOSES</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * CLOSE</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * OPEN</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * CLOSE *</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * OPEN *</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * CLOSES</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * OPENS</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * CLOSES</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>WHEN * OPENS</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>	
+	<category>
+		<pattern>_ WHEN * CLOSE</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * OPEN</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * CLOSE *</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * OPEN *</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * CLOSES</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * OPENS</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * CLOSES</pattern>
+		<template>I'm afraid i don't know the closing time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	<category>
+		<pattern>_ WHEN * OPENS</pattern>
+		<template>I'm afraid i don't know the opening time myself, you would have to go there and check or they would probably be online if oyu search on google.</template>
+	</category>
+	
+	<!-- ==================================================SOMEWHERE ELSE================================================================ -->
+	<category>
+		<pattern>SOMEWHERE ELSE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE ELSE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE ELSE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>SOME WHERE ELSE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ SOME WHERE ELSE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ SOME WHERE ELSE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>	
+	<category>
+		<pattern>_ SOMEWHERE * ELSE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE ELSE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>	
+	<category>
+		<pattern>DIFFERENT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ DIFFERENT *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ DIFFERENT</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ ANOTHER PLACE</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>	
+	<category>
+		<pattern>_ ANOTHER PLACE *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	
+	<!-- ==================================================SUGGESTIONS================================================================ -->
+	<category>
+		<pattern>_ SUGGEST * EAT</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * EAT *</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * FOOD</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * FOOD *</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * RESTAURANT *</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * RESTAURANT</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * RESTAURANTS</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	
+	<category>
+		<pattern>_ RECOMMEND * EAT</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * EAT *</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * FOOD</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * FOOD *</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * RESTAURANT *</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * RESTAURANT</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * RESTAURANTS</pattern>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>		
+	<category>
+		<pattern>_ SUGGEST *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>SUGGEST *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	<category>
+		<pattern>RECOMMEND *</pattern>
+		<that>
+			_ FOOD *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive food, how about Fench or Italian?</template>
+	</category>
+	
+	<category>
+		<pattern>_ BETTER</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ BETTER *</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ DON * LIKE *</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ BAD</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ BAD *</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	
+	<!-- ==================================================WHERE IS================================================================ -->
+	<category>
+		<pattern>WHERE IS SUBWAY</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUBWAY IS</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUBWAY IS *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS SUBWAY</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS SUBWAYS</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SUBWAY</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * SUBWAYS</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * SUBWAY</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * SUBWAY</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * SUBWAY S</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * SUBWAYS</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * SUBWAY</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * SUBWAY *</pattern>
+		<template><srai>SUBWAY</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS NANDO</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS NANDOS</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS NANDOS *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NANDOS IS</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ NANDOS IS *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS NANDOS</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS NANDO *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * NANDO</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * NANDO *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * NANDOS</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * NANDOS</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * NANDO *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * NANDO</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * NANDO *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * NANDO S</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ NANDO S *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * NANDOS</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * NANDO</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * NANDO *</pattern>
+		<template><srai>NANDOS</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS BURGER KING</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS BURGER KING</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS BURGER KING *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ BURGER KING IS</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ BURGER KING IS *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS BURGER KING *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BURGER KING</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BURGER KING *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * BURGER KINGS</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * BURGER KINGS</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * BURGER KING *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * BURGER KING</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * BURGER KING *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * BURGER KING S</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ BURGER KING S *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * BURGER KINGS</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * BURGER KING</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * BURGER KING *</pattern>
+		<template><srai>BURGER KING</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS DOMINOE</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ DOMINOES IS</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ DOMINOES IS *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS DOMINOES</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS DOMINOES *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS DOMINOES</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS DOMINOE *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * DOMINOE</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * DOMINOE *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * DOMINOES</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * DOMINOE</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * DOMINOE *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * DOMINOE</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * DOMINOES *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * DOMINOE S</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ DOMINOE *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * DOMINOES</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * DOMINOE</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * DOMINOE *</pattern>
+		<template><srai>DOMINOES</srai></template>
+	</category>
+	
+	
+	<category>
+		<pattern>WHERE IS KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ KFC IS</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ KFC IS *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * KFC S</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * KFC</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * KFC *</pattern>
+		<template><srai>KFC</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS PIZZA HUT</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ PIZZA HUT IS</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ PIZZA HUT IS *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS PIZZA HUT</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PIZZA HUT</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * PIZZA HUT</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PIZZA HUT</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PIZZA HUT S</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * PIZZA HUT</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * PIZZA HUT *</pattern>
+		<template><srai>PIZZA HUT</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS PAPA JOHN</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PAPA JOHNS IS</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PAPA JOHNS IS *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS PAPA JOHNS</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS PAPA JOHNS *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS PAPA JOHNS</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS PAPA JOHN *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PAPA JOHN</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PAPA JOHN *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PAPA JOHNS</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * PAPA JOHN</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * PAPA JOHN *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PAPA JOHN</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PAPA JOHNS *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PAPA JOHN S</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ PAPA JOHN *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PAPA JOHNS</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * PAPA JOHN</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * PAPA JOHN *</pattern>
+		<template><srai>PAPA JOHNS</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS PIZZA EXPRESS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PIZZA EXPRESS IS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ PIZZA EXPRESS IS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS PIZZA EXPRESS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PIZZA EXPRESS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * PIZZA EXPRESS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PIZZA EXPRESS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * PIZZA EXPRESS S</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * PIZZA EXPRESS</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * PIZZA EXPRESS *</pattern>
+		<template><srai>PIZZA EXPRESS</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS TOBY CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ TOBY CARVERY IS</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ TOBY CARVERY IS *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS TOBY CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TOBY CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TOBYS CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * TOBY CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TOBY CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TOBY CARVERY S</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TOBY CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * TOBYS CARVERY</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * TOBY CARVERY *</pattern>
+		<template><srai>TOBY CARVERY</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS CHIMICHANGA</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHIMICHANGA IS</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ CHIMICHANGA IS *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS CHIMICHANGA</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS CHIMICHANGA *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS CHIMICHANGAS</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS CHIMICHANGA *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * CHIMICHANGA</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * CHIMICHANGA *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * CHIMICHANGAS</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * CHIMICHANGA</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * CHIMICHANGA *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * CHIMICHANGA</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * CHIMICHANGAS *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * CHIMICHANGA S</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ CHIMICHANGA *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * CHIMICHANGAS</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * CHIMICHANGA</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * CHIMICHANGA *</pattern>
+		<template><srai>CHIMICHANGA</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS HANDMADE BURGER CO</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ HANDMADE BURGER CO IS</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ HANDMADE BURGER CO IS *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS HANDMADE BURGER CO</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS HANDMADE BURGER CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS HANDMADE BURGER *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS HANDMADE BURGER CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HANDMADE BURGER CO</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HANDMADE BURGER CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HANDMADE BURGERS *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HANDMADE BURGER *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * HAND MADE BURGER *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * HANDMADE BURGER CO</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * HANDMADE BURGER CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * HANDMADE BURGER CO</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * HANDMADE BURGERS CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * HANDMADE BURGER *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ HANDMADE BURGER CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * HANDMADE BURGER CO</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * HANDMADE BURGERS *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * HANDMADE BURGER CO *</pattern>
+		<template><srai>HANDMADE BURGER CO</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TACO BELL IS</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ TACO BELL IS *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TACO BELL S</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * TACO BELL</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * TACO BELL *</pattern>
+		<template><srai>TACO BELL</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS GREGG</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ GREGGS IS</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ GREGGS IS *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS GREGGS</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS GREGGS *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS GREGGS</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS GREGG *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * GREGG</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * GREGG *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * GREGGS</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * GREGGS</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * GREGG *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GREGG</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GREGGS *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GREGG S</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ GREGG *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * GREGGS</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * GREGG</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * GREGG *</pattern>
+		<template><srai>GREGGS</srai></template>
+	</category>
+	
+	<category>
+		<pattern>WHERE IS STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ STOKES IS</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ STOKES IS *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ IS STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE IS STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>WHERE * STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ WHERE * STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * STOKES S</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW _ STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>HOW * STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * STOKES</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	<category>
+		<pattern>_ HOW * STOKES *</pattern>
+		<template><srai>STOKES</srai></template>
+	</category>
+	
+</aiml>
