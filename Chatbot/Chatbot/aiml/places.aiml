@@ -82,6 +82,136 @@
 </template>
 </category>
 
+<category><pattern>WHEN IS * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN IS * ClOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME IS * CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME IS * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>IS * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>IS * CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME DOES * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN TIME DOES * CLOSE</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>IS * SHUT</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME DOES * SHUT</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN ARE THE * OPERATING HOURS</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN ARE THE * OPENING HOURS</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>WHAT ARE THE * OPERATING HOURS</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>WHAT ARE THE * OPENING HOURS</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>WHEN DOES * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>WHEN DOES * CLOSE</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>WHEN DOES THE * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>WHEN DOES THE * CLOSE</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>IS THE * OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
+		<category><pattern>IS THE * CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+		<category><pattern>IS THE * OPEN RIGHT NOW</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+		<category><pattern>IS THE * CLOSED RIGHT NOW</pattern>
+	<template>
+	<srai>OPENING TIMES <star/></srai>
+	</template>
+	</category>
+	
 <topic name="places">
 
 	<category><pattern>HOW DO I GET THERE</pattern>
