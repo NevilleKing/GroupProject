@@ -83,6 +83,42 @@
 	<srai>OPENING TIMES <get name="last-place"/></srai>
 	</template>
 	</category>
+	
+	<category><pattern>WHEN IS IT OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHEN IS IT CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME IS IT OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME IS IT CLOSED</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME DOES IT OPEN</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
+	
+	<category><pattern>WHAT TIME DOES IT CLOSE</pattern>
+	<template>
+	<srai>OPENING TIMES <get name="last-place"/></srai>
+	</template>
+	</category>
 
 	<category><pattern>IS IT OPEN</pattern>
 	<template>
