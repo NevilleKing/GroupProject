@@ -1380,102 +1380,102 @@
 	
 	<!-- ========================================================= Brewhaus ====================================================================== -->	
 	<category>
-		<pattern>Brewhaus</pattern>
+		<pattern>BREWHAUS</pattern>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>BURGERKING</pattern>
+		<pattern>BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ BURGERKING</pattern>
+		<pattern>_ BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ BURGERKING *</pattern>
+		<pattern>_ BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>BURGER KING</pattern>
+		<pattern>BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>	
 	<category>
-		<pattern>_ BURGER KING</pattern>
+		<pattern>_ BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ BURGER KING *</pattern>
+		<pattern>_ BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>		
 	<category>
-		<pattern>_ BURGER KING</pattern>
+		<pattern>_ BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ REALLY * BURGER KING</pattern>
+		<pattern>_ REALLY * BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ BURGER KING *</pattern>
+		<pattern>_ BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>I * BURGER KING *</pattern>
+		<pattern>I * BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>	
 	<category>
-		<pattern>_ BURGER KING *</pattern>
+		<pattern>_ BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ BURGER KING *</pattern>
+		<pattern>_ BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>_ BURGER KING</pattern>
+		<pattern>_ BREWHAUS</pattern>
 		<that>
 			_ DRINK *
 		</that>
 		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
 	</category>
 	<category>
-		<pattern>BURGER KING *</pattern>
+		<pattern>BREWHAUS *</pattern>
 		<that>
 			_ DRINK *
 		</that>

@@ -4,22 +4,22 @@
 <!--Navigation directions -->
 <!-- -->
 <category><pattern>PTSIL</pattern>
-<template>Do you have any specified demands (Hotels, Bed and breakfast,self-catering, camping)? please choose one</template>
+<template>Do you have any specified demands (Hotels, Bed and breakfast,self-catering, camping)?</template>
 </category>
 <category><pattern>PLACES TO STAY *</pattern>
-<template>Do you have any specified demands (Hotels, Bed and breakfast,self-catering, camping)? please choose one</template>
+<template>Do you have any specified demands (Hotels, Bed and breakfast,self-catering, camping)?</template>
 </category>
 <category><pattern>HOTELS *</pattern>
-<template>There are couple of Holiday Inn's: one is cheeper(Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on brayfor pool bay. Which one you want directions for?</template>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
 </category>
 <category><pattern>_ HOTEL *</pattern>
-<template>There are couple of Holiday Inn's: one is cheeper(Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on brayfor pool bay. Which one you want directions for?</template>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
 </category>
 <category><pattern>HOTEL *</pattern>
-<template>There are couple of Holiday Inn's: one is cheeper(Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on brayfor pool bay. Which one you want directions for?</template>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
 </category>
 <category><pattern>_ HOTEL</pattern>
-<template>There are couple of Holiday Inn's: one is cheeper(Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on brayfor pool bay. Which one you want directions for?</template>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
 </category>
 <category><pattern>_ EXPRESS *</pattern>
 <template>Holliday Inn Express located approximate 300 meters to south-west of Minerva buiding. Good pointer would be a Lincoln tank memorial located on round-about nearby.</template>
