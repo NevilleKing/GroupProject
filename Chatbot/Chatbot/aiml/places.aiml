@@ -9,6 +9,10 @@
 </template>
 </category>
 
+<category><pattern>DIRECTIONS TO *</pattern>
+<template><srai>DIRECTIONS <star/></srai></template>
+</category>
+
 <category><pattern>DIRECTIONTXT</pattern>
 <template>
 <random>
