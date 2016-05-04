@@ -1,0 +1,2176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+	<category>
+		<pattern>RINKD3</pattern>
+		<template>
+			<random>
+				<!-- Any item in this list must contain the word drink for the rest of the file to work, and it should not be the first or last word of the item (i think) -->
+				<li>There are lots of nice places to drink, it depends what kind of place you're after.</li>
+				<li>Well, what kind of place do you want to drink at?</li>
+				<li>There are a lot of places to drink around lincoln, what kind of place are you after?</li>
+				<li>Any type of pub or bar you're specifically after?</li> 
+			</random>
+		</template>
+	</category>
+	
+	<!-- All the catergories work by feeding back to the very first catergory (RINKD3) above, they only activate if RINKD3 has been activated beforehand -->
+	<!-- Any sentence with the words 'drink' or whatever is below will activate the RINKD3 srai tag and call the above RINKD3 catergory -->
+	<category>
+		<pattern>_ DRINK * LIKE *</pattern>
+		<template> My favourite drink is definately coffee. How about you?</template>
+	</category>
+	<category>
+		<pattern>_ DRINK * LIKE</pattern>
+		<template> My favourite drink is definately coffee. How about you?</template>
+	</category>
+	
+	<category>
+		<pattern>_ DRINK *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ GET DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ GO FOR A DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * DRINK *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>WHERE * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>* DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ DRINK *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ SOMETHING * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ SOMEWHERE * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ NICE * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>WHERE CAN I GET A * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ GET * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>_ GET * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>WHERE CAN * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>	
+	<category>
+		<pattern>WHERE CAN * DRINK</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>I * THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ QUITE THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ VERY THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ VERY THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ REALLY THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EXTREMELY THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ EXTREMELY THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PRETTY THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>* THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ THIRSTY</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ THIRSTY *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PARCHED</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PARCHED *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PARCHED</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PARCHED *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PUB *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PUB</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PUBS</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ PUBS *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BAR</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BAR *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BARS</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BARS *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CLUB</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CLUB *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CLUBS</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ CLUBS *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BEER</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BEER *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ COFFEE</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ COFFEE *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BEV</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<category>
+		<pattern>_ BEV *</pattern>
+		<template> 
+			<srai>RINKD3</srai> 
+		</template>
+	</category>
+	<!-- The <that> tag provides the context for the convo, it checks the last thing said by the bot for the words inside the tag and if they are not found then that catergory wont work -->
+	<!-- ============================================================PUBS==================================================================== -->	
+	<category>
+		<pattern>PUB</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Jolly Brewer has good drinks and reviews - and it's pretty cheap too! Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ PUB</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Jolly Brewer has good drinks and reviews - and it's pretty cheap too! Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ PUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Jolly Brewer has good drinks and reviews - and it's pretty cheap too! Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ PUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Jolly Brewer has good drinks and reviews - and it's pretty cheap too! Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>PUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Jolly Brewer has good drinks and reviews - and it's pretty cheap too! Would you like directions?</template>
+	</category>	
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			THE JOLLEY BREWER *
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			THE JOLLEY BREWER *
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			THE JOLLEY BREWER *
+		</that>
+		<template>It's along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>Well alright then</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>Ok then, it's not like its hard to find, along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			THE JOLLEY BREWER _
+		</that>
+		<template>K then, it's not like its hard to find, along Broadgate just before Monks Road, you can't miss it</template>
+	</category>
+	
+	<!-- ============================================================ BAR ==================================================================== -->	
+	<category>
+		<pattern>BAR</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Strait and Narrow has great cocktails, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ BAR</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Strait and Narrow has great cocktails, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ BAR *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Strait and Narrow has great cocktails, would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ BAR *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Strait and Narrow has great cocktails, would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>BAR *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Strait and Narrow has great cocktails, would you like directions?</template>
+	</category>	
+	
+	<category>
+		<pattern>_ BAR *</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>BAR *</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>BAR _</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>_ BAR</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			STRAIT AND NARROW *
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			STRAIT AND NARROW *
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			STRAIT AND NARROW *
+		</that>
+		<template>It's just off of the High street, near Pizza express - up close to steep hill.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>Well ok then</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>Ok then, it's not like its hard to find, with it being right next to the high street :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			STRAIT AND NARROW _
+		</that>
+		<template>Ok then, it's not like its hard to find, with it being right next to the high street :D</template>
+	</category>
+	
+	<!-- ======================================================= CLUB ========================================================================= -->	
+	<category>
+		<pattern>CLUB</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CLUB</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CLUB</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ CLUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * CLUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>CLUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>CLUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CLUB *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CLUB</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's Circle, a fairly new Nightclub which is pretty popular - would you like directions?</template>
+	</category>	
+	
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>It's on Silver Street, right above Brewhaus.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>Ok then, it's about a 15 minute walk from the Campus.</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ CIRCLE *
+		</that>
+		<template>Ok then, it's about a 15 minute walk from the Campus.</template>
+	</category>
+	
+	
+	<!-- =======================================================STARBUCKS========================================================================= -->	
+	<category>
+		<pattern>STARBUCKS</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>	
+	<category>
+		<pattern>STARBUCKS *</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>_ STARBUCKS *</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>	
+	<category>
+		<pattern>_ STARBUCKS *</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>_ STARBUCKS</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * STARBUCKS</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>_ STARBUCKS *</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>I * STARBUCKS *</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	
+	<category>
+		<pattern>STARBUCKS</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>	
+	<category>
+		<pattern>_ STARBUCKS</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * STARBUCKS</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>_ STARBUCKS *</pattern>
+		<template>There's one really close, it's right on the high street near Wigford Way.</template>
+	</category>
+	<category>
+		<pattern>I * STARBUCKS *</pattern>
+		<template>There's one really close,it's right on the high street near Wigford Way.</template>
+	</category>
+	
+	<!-- =======================================================TOWER BARS========================================================================= -->	
+	<category>
+		<pattern>TOWER BARS</pattern>
+		<template>It's on Campus, just next to the library.</template>
+	</category>	
+	<category>
+		<pattern>_ TOWER BARS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, just next to the library.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * TOWER BARS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, just next to the library.</template>
+	</category>
+	<category>
+		<pattern>_ TOWER BARS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, just next to the library.</template>
+	</category>
+	<category>
+		<pattern>I * TOWER BARS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, just next to the library.</template>
+	</category>	
+	<category>
+		<pattern>_ TOWER BARS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, just next to the library.</template>
+	</category>
+	
+	<!-- ========================================================= THE SWAN ====================================================================== -->	
+	<category>
+		<pattern>THE SWAN</pattern>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ THE SWAN</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * THE SWAN</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ THE SWAN *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * THE SWAN *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ THE SWAN *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ THE SWAN *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ THE SWAN</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	<category>
+		<pattern>THE SWAN *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, next to the MHT Building. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= THE SQUARE SAIL ====================================================================== -->	
+	<category>
+		<pattern>THE SQUARE SAIL</pattern>
+		<template>It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ SQUARE SAIL</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * SQUARE SAIL</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ SQUARE SAIL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * SQUARE SAIL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ THE SQUARE SAIL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ WETHERSPOONS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one really close, It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ WETHERSPOONS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one really close, It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	<category>
+		<pattern>WETHERSPOONS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one really close, It's on the Brayford Waterfront, along the Brayford Wharf. Anything else?</template>
+	</category>
+	
+	<!-- =========================================================THE ENGINE SHED ====================================================================== -->	
+	<category>
+		<pattern>ENGINE SHED</pattern>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ ENGINE SHED</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * ENGINE SHED</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ ENGINE SHED</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ ENGINE SHED *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>		
+	<category>
+		<pattern>_ ENGINE SHED *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * ENGINE SHED *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ ENGINE SHED *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ ENGINE SHED *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ ENGINE SHED</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	<category>
+		<pattern>ENGINE SHED *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Campus, right next to the LPAC Centre beside the Library. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= COSTA COFFEE ====================================================================== -->	
+	<category>
+		<pattern>COSTA COFFEE</pattern>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ COSTA COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * COSTA COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ COSTA COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ COSTA *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>I * COSTA *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ COSTA *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ COSTA *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>_ COSTA</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	<category>
+		<pattern>COSTA *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's a couple in Lincoln, one near St. Marks Square and another on the High Street. Anything other questions?</template>
+	</category>
+	
+	<!-- ======================================================= HOME ========================================================================= -->	
+	<category>
+		<pattern>HOME</pattern>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>HOME*</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HOME *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>HOME</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>HOME*</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HOME*</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ HOME*</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HOME</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * HOME</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HOME *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>I * HOME *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>HOME</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ HOME *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ HOME</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>A popular place for clubbing, it's right behind Walkabout on Park Street. you can't miss it.</template>
+	</category>
+	
+	<!-- ========================================================= WALKABOUT ====================================================================== -->	
+	<category>
+		<pattern>WALKABOUT</pattern>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>	
+	<category>
+		<pattern>_ WALKABOUT</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * WALKABOUT</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	<category>
+		<pattern>_ WALKABOUT *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	<category>
+		<pattern>I * WALKABOUT *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>	
+	<category>
+		<pattern>_ WALKABOUT *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	<category>
+		<pattern>_ WALKABOUT *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	<category>
+		<pattern>_ WALKABOUT</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	<category>
+		<pattern>WALKABOUT *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Fancy a sports bar with an Australian theme? Walkabout is on the High Street.</template>
+	</category>
+	
+	<!-- ========================================================= CAFE NERO ====================================================================== -->	
+	<category>
+		<pattern>CAFE NERO</pattern>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>CAFE NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_  NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>		
+	<category>
+		<pattern>_ CAFE NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CAFE NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * CAFE NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ CAFE NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE NERO</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	<category>
+		<pattern>CAFE NERO *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one about midway on the highstreet, close to St. Mark street. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= Brewhaus ====================================================================== -->	
+	<category>
+		<pattern>BREWHAUS</pattern>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>		
+	<category>
+		<pattern>_ BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ BREWHAUS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	<category>
+		<pattern>BREWHAUS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on Silver Street, just past the Lincoln Drill Hall. Anything else?</template>
+	</category>
+	
+	<!-- ========================================================= REVOLUTION ====================================================================== -->	
+	<category>
+		<pattern>REVOLUTION</pattern>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ REVOLUTION</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * REVOLUTION</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REVOLUTION *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>I * REVOLUTION *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>	
+	<category>
+		<pattern>_ REVOLUTION *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REVOLUTION *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>_ REVOLUTION</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	<category>
+		<pattern>REVOLUTION *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>There's one on the other side of the Brayford, you can't miss it.</template>
+	</category>
+	
+	
+	<!-- ======================================================= MAILBOX ========================================================================= -->	
+	<category>
+		<pattern>MAILBOX</pattern>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ MAILBOX *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>MAILBOX *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ MAILBOX</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * MAILBOX</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ MAILBOX *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>I * MAILBOX *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ MAILBOX *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the highstreet on the corner next to the underpass, you can't miss it. Any other questions?</template>
+	</category>
+	
+	<!-- =======================================================SUGARCUBES ========================================================================= -->	
+	<category>
+		<pattern>SUGARCUBES</pattern>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ SUGARCUBES *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ CUBES *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ CUBES</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>CUBES *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>SUGARCUBES *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ SUGARCUBES</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CUBES</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ SUGARCUBE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	<category>
+		<pattern>I * SUGARCUBE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>	
+	<category>
+		<pattern>_ SUGARCUBE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the high street, on the left quite far up close to steep hill. Any other questions?</template>
+	</category>
+	
+	
+	<!-- ======================================================= CAFE ========================================================================= -->	
+	<category>
+		<pattern>CAFE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>	
+	<category>
+		<pattern>_ CAFE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CAFE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>_ CAFE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	<category>
+		<pattern>I * CAFE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Stokes cafe is really nice, and it's pretty close too. Would you like directions?</template>
+	</category>
+	
+	<category>
+		<pattern>STOKES</pattern>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>_ YES *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>YES *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>YES _</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>_ YES</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>OK *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>It's about midway down the highstreet, actually sitting ontop of the river witham, it's the black and white building.</template>
+	</category>
+	<category>
+		<pattern>NO *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Well ok then, any other questions?</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	<category>
+		<pattern>* *</pattern>
+		<that>
+			_ STOKES *
+		</that>
+		<template>Ok then, it's not like its hard to find with it being on the other side of the brayford :D</template>
+	</category>
+	
+	<!-- ======================================================= ELECTRIC BAR ========================================================================= -->	
+	<category>
+		<pattern>ELECTRIC BAR</pattern>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ ELECTRIC BAR</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * ELECTRIC BAR</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	<category>
+		<pattern>_ ELECTRIC BARS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	<category>
+		<pattern>I * ELECTRIC BARS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>	
+	<category>
+		<pattern>_ ELECTRIC BARS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>It's on the other side of the brayford, you can't miss it. Anything else?</template>
+	</category>
+	
+	<!-- ======================================================= CRAFT BEER ========================================================================= -->	
+	<category>
+		<pattern>CRAFT BEER</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Strait and Narrow have a wide selection of Craft Beer, as well as Brewhaus. Any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ CRAFT BEER</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Strait and Narrow have a wide selection of Craft Beer, as well as Brewhaus. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CRAFT BEER</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Strait and Narrow have a wide selection of Craft Beer, as well as Brewhaus. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ CRAFT BEER *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Strait and Narrow have a wide selection of Craft Beer, as well as Brewhaus. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * CRAFT BEER *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Strait and Narrow have a wide selection of Craft Beer, as well as Brewhaus. Any of those sound good?</template>
+	</category>
+	
+		<!-- ======================================================= COCKTAILS ========================================================================= -->	
+	<category>
+		<pattern>COCKTAILS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Revolution is known for its cocktails, as well as Electric Bars. Any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ COCKTAILS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Revolution is known for its cocktails, as well as Electric Bars. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * COCKTAILS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Revolution is known for its cocktails, as well as Electric Bars.Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ COCKTAIL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Revolution is known for its cocktails, as well as Electric Bars. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * COCKTAIL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Revolution is known for its cocktails, as well as Electric Bars. Any of those sound good?</template>
+	</category>
+	
+	
+	<!-- ======================================================= CHEAP ========================================================================= -->	
+	<category>
+		<pattern>CHEAP</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Plenty of cheap options to choose from: The Swan, Tower Bars or The Square Sail for example. Any take your fancy?</template>
+	</category>	
+	<category>
+		<pattern>_ CHEAP</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Plenty of cheap options to choose from:  The Swan, Tower Bars or The Square Sail for example.  Any take your fancy?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * CHEAP</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Plenty of cheap options to choose from: The Swan, Tower Bars or The Square Sail for example. Any take your fancy?</template>
+	</category>
+	<category>
+		<pattern>_ CHEAP *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Plenty of cheap options to choose from: The Swan, Tower Bars or The Square Sail for example. Any take your fancy?</template>
+	</category>
+	<category>
+		<pattern>I * CHEAP *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Plenty of cheap options to choose from: The Swan, Tower Bars or The Square Sail for example. Any take your fancy?</template>
+	</category>
+	
+	<!-- ======================================================= Coffee ========================================================================= -->	
+	<category>
+		<pattern>A CUP OF COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ A CUP OF COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * A CUP OF COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ A CUP OF COFFEE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * A CUP OF COFFEE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ A CUP OF COFFEE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ A CUP OF COFFEE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there are a lot of coffee shops in Lincoln - Starbucks, Costa, Cafe Nero - any of those sound good?</template>
+	</category>
+	
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ THERE ARE A LOT OF COFFEE SHOPS *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO</pattern>
+		<that>
+			_ THERE ARE A LOT OF COFFEE SHOPS *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ THERE ARE A LOT OF COFFEE SHOPS *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	
+	<!-- ======================================================= FANCY / EXPENSIVE / HIGH CLASS ========================================================================= -->	
+	<category>
+		<pattern>_ FANCY BAR *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ FANCY BAR</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>SOMEWHERE FANCY</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE FANCY *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE FANCY</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>SOME WHERE FANCY</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ SOME WHERE FANCY *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ SOME WHERE FANCY</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>	
+	<category>
+		<pattern>_ SOMEWHERE * FANCY *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ SOMEWHERE EXPENSIVE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>HIGH CLASS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ HIGH CLASS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ HIGH CLASS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ MORE EXPENSIVE *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ MORE EXPENSIVE</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ HIGHER CLASS</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	<category>
+		<pattern>_ HIGHER CLASS *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>Well there a few places you could go to for nicer - more expensive drink, how about Electric Bars?</template>
+	</category>
+	
+	<category>
+		<pattern>YES</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template><srai>ELECTRIC BAR</srai></template>
+	</category>
+		
+	<category>
+		<pattern>NO</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	<category>
+		<pattern>_ NO *</pattern>
+		<that>
+			_ EXPENSIVE *
+		</that>
+		<template>Someplace else then?</template>
+	</category>
+	
+</aiml>
