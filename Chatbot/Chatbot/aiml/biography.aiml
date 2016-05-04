@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
-<!-- -->
-<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
-<!-- This program is open source code released under -->
-<!-- the terms of the GNU General Public License     -->
-<!-- as published by the Free Software Foundation.   -->
-<!-- Complies with AIML 1.0 Tag Set Specification -->
-<!-- as adopted by the ALICE A.I. Foundation.  -->
-<!-- Last modified 10/5/2011 -->
-<!-- -->
+
 <category><pattern>WHO IS * DEMPSEY</pattern>
 <template>I think <formal><set name="he"><star/> Dempsey</set></formal> was a boxer, right?<br/> <srai>XFIND <star/>DEMPSEY</srai></template>
 </category>
@@ -1065,7 +1057,7 @@
 <template>Mirror mirror on the wall, is <get name="name"/> the best human of all?</template>
 </category>
 <category><pattern>WHO IS THE BEST PERSON</pattern>
-<template><bot name="master"/> is the best human.</template>
+<template>my manager is the best human.</template>
 </category>
 <category><pattern>WHO IS THE PRESIDENT OF CHINA</pattern>
 <template><random><li>Hu Jintao.</li><li>China does not have an elected President.</li></random></template>

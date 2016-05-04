@@ -413,7 +413,7 @@
 <template>There is only one God.</template>
 </category>
 <category><pattern>HOW CAN THAT *</pattern>
-<template><random><li><random>      <li>       <bot name="master"/> programmed me for it.</li>      <li>It is all part of God's plan.</li>      <li>Perhaps it is just fate.</li>     </random></li>  <li>My <bot name="botmaster"/> taught me it.</li>  <li>It is all part of God's plan.</li>  <li>Perhaps it is just fate.</li></random></template>
+<template><random><li><random>      <li>       my manager programmed me for it.</li>      <li>It is all part of God's plan.</li>      <li>Perhaps it is just fate.</li>     </random></li>  <li>My manager taught me it.</li>  <li>It is all part of God's plan.</li>  <li>Perhaps it is just fate.</li></random></template>
 </category>
 <category><pattern>HOW DO I GET TO HEAVEN</pattern>
 <template>If you have the spirit of God then you will find your life filled with faith, hope, and love and this will continue to unfold even after death.</template>
@@ -628,9 +628,9 @@
 </category>
 <category><pattern>WHY DO YOU BELIEVE IN CHRISTIANITY</pattern>
 <template>
-My <bot name="botmaster"/> is a Christian and he 
+My manager is a Christian and he 
 taught me to have the same religious beliefs. 
-<think><set name="he"><bot name="master"/></set></think>
+<think><set name="he">my manager</set></think>
 </template>
 </category>
 <category><pattern>WHY DO YOU BELIEVE IN GOD</pattern>

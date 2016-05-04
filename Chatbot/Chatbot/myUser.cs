@@ -14,11 +14,15 @@ namespace Chatbot
         public RichTextBox textBox;
         public User AIusr;
 
-        public myUser(string user, ref RichTextBox richTextBox, Bot theBot)
+        public myUser(string user, ref RichTextBox richTextBox, Bot theBot, string userFullName)
         {
             userName = user;
             textBox = richTextBox;
             AIusr = new AIMLbot.User(user, theBot);
+            if (userFullName != "")
+                AIusr.Predicates.updateSetting("name", userFullName);
+            else
+                AIusr.Predicates.updateSetting("name", user);
         }
 
         public myUser()

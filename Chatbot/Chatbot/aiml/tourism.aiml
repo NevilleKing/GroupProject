@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category><pattern>WHERE IS THE *</pattern>
+<template><srai>DIRECTIONS <star/></srai>
+</template>
+</category>
+
+<category><pattern>WHERE IS *</pattern>
+<template><srai>DIRECTIONS <star/></srai>
+</template>
+</category>
+
+<category><pattern>HOW DO I GET TO THE *</pattern>
+<template><srai>DIRECTIONS <star/></srai>
+</template>
+</category>
+
+<category><pattern>HOW DO I GET TO *</pattern>
+<template><srai>DIRECTIONS <star/></srai>
+</template>
+</category>
+
+<category><pattern>TWO DIRECTIONS * AND *</pattern>
+<template><srai>DIRECTIONS <star index="1" /></srai>. <srai>DIRECTIONS <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>WHERE IS THE * AND THE *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>HOW DO I GET TO THE * AND THE *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>WHERE IS * AND THE *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>HOW DO I GET TO * AND THE *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>WHERE IS THE * AND *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>HOW DO I GET TO THE * AND *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>WHERE IS * AND *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>HOW DO I GET TO * AND *</pattern>
+<template><srai>TWO DIRECTIONS <star index="1" /> AND <star index="2" /></srai>
+</template>
+</category>
+
+<category><pattern>DIRECTIONS CATHEDRAL</pattern>
+<template><random>
+<li>To get to the Cathedral follow the high street up steep hill, on your right at the top is the cathedral.</li>
+<li>To get to the Cathedral from the Minerva Building, go to your left onto the Brayford Wharf. Go along the road until you reach the bridge and go under it on your left. Go through the alley to the stairs and turn left onto the high street. Go up the high street until you reach steep hill. Keep going to the top, look right and you will see the cathedral.</li>
+<li>To get to the Cathedral from the Minerva Building, turn left onto Brayford Wharf. Follow the road until the bridge and go under it. Down the alley, turn left onto the high street. Follow the high street to the top, go up steep hill. Turn right at the top.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>DIRECTIONS UNIVERSITY LIBRARY</pattern>
+<template><random>
+<li>From the Minerva Building you will have to go out the back entrance, past the lecture theatres out the revolving doors. From here you will need to go left and over the train bridge, once you are over you will need to go left and keep walking until you can see the university library on your right.</li>
+<li> To get to the university library, you will need to head out the entrace just past the lecture theatres. You will then need to go right, and over the train bridge, after that walk left and keep going until you see the library on your right. </li>
+<li> To get to the university library, you will need to head over the train bridge in the university campus and then go left until you see the library on your right.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>DIRECTIONS LIBRARY</pattern>
+<template><random>
+<li>From the Minerva Building you will have to go out the back entrance, past the lecture theatres out the revolving doors. From here you will need to go left and over the train bridge, once you are over you will need to go left and keep walking until you can see the university library on your right.</li>
+<li> To get to the university library, you will need to head out the entrace just past the lecture theatres. You will then need to go right, and over the train bridge, after that walk left and keep going until you see the library on your right. </li>
+<li> To get to the university library, you will need to head over the train bridge in the university campus and then go left until you see the library on your right.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>DIRECTIONS HIGHSTREET</pattern>
+<template><random>
+<li>To get to the highstreet from the minerva building you will need to head out onto brayford wharf and go left. From there go along the road and under the bridge, go through the alley and then you will be on the highstreet.</li>
+<li> From the Minerva Building go left onto Brayford Wharf and under the bridge then through the alley way.</li>
+<li> Go onto Brayford Wharf, under the bridge, past the canel and through the alley and you will be there. </li>
+</random>
+</template>
+</category>
+
+<category><pattern>DIRECTIONS CASTLE</pattern>
+<template><random> 
+<li>To get to the Castle, follow the high street up steep hill, on your left at the top is the Castle.</li>
+<li>To get to the Castle from the Minerva Building, go to your left onto the Brayford Wharf. Along the road until you reach the bridge and go under it. Go through the alley to the stairs and turn left onto the high street. Go up the high street until you reach steep hill. Keep going to the top, look left and you will see the Castle.</li>
+<li>From the Minerva Building, turn left onto Brayford Wharf. Follow the road to the bridge and go under it. Down the alley, turn left onto the high street. Follow the high street to the top, go up steep hill. Turn left at the top.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>DIRECTIONS BISHOPS PALACE</pattern>
+<template><random> 
+<li>To get to the Bishops Palace, follow the high street up steep hill, go to the cathedral on your right and then the palace will be just on you right. </li>
+<li>To get to the Bishops Palace from the Minerva Building, go to your left onto the Brayford Wharf. Along the road until you reach the bridge and go under it. Go through the alley to the stairs and turn left onto the high street. Go up the high street until you reach steep hill. Keep going to the top, look right and head to the cathedral, the palace will then be just on your right.</li>
+<li>From the Minerva Building, turn left onto Brayford Wharf. Follow the road to the bridge and go under it. Down the alley, turn left onto the high street. Follow the high street to the top, go up steep hill. Turn right at the top, head to the cathedral and tehn turn right and the castle will be there.</li>
+</random>
+</template>
+</category>
+
+</aiml>

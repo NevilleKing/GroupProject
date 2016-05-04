@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<!--Tourism category questions -->
+<!--Navigation directions -->
+<!-- -->
+<category><pattern>PTSIL</pattern>
+<template>Do you have any specified demands (Hotels, Bed and breakfast,self-catering, camping)?</template>
+</category>
+<category><pattern>PLACES TO STAY *</pattern>
+<template>Do you have any specified demands (Hotels, Bed and breakfast,self-catering, camping)?</template>
+</category>
+<category><pattern>HOTELS *</pattern>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
+</category>
+<category><pattern>_ HOTEL *</pattern>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
+</category>
+<category><pattern>HOTEL *</pattern>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
+</category>
+<category><pattern>_ HOTEL</pattern>
+<template>There are couple of Holiday Inn's: one is cheaper (Holliday Inn Express), the other one (Holliday Inn) a bit more expencive, but has a view on Brayford pool. Which one you want directions for?</template>
+</category>
+<category><pattern>_ EXPRESS *</pattern>
+<template>Holliday Inn Express located approximate 300 meters to south-west of Minerva buiding. Good pointer would be a Lincoln tank memorial located on round-about nearby.</template>
+</category>
+<category><pattern>HOLIDAY INN</pattern>
+<template>Located on the other side of brayford pool.</template>
+</category>
+<category><pattern>_ HOLIDAY INN *</pattern>
+<template>Located on the other side of brayford pool.</template>
+</category>
+<category><pattern>_ HOLIDAY INN</pattern>
+<template>Located on the other side of brayford pool.</template>
+</category>
+<category><pattern>WHERE TO STAY *</pattern>
+<template>Which place are you looking for? There are many options available: Hotel, self-catering, Bed and breakfast, camping?</template>
+</category>
+<category><pattern>WHERE * STAY *</pattern>
+<template>Which place are you looking for? There are many options available: Hotel, self-catering, Bed and breakfast, camping?</template>
+</category>
+<category><pattern>WHERE * STAY</pattern>
+<template>Which place are you looking for? There are many options available: Hotel, self-catering, Bed and breakfast, camping?</template>
+</category>
+<category><pattern>_ WHERE * STAY</pattern>
+<template>Which place are you looking for? There are many options available: Hotel, self-catering, Bed and breakfast, camping?</template>
+</category>
+<category><pattern>_ WHERE * STAY *</pattern>
+<template>Which place are you looking for? There are many options available: Hotel, self-catering, Bed and breakfast, camping?</template>
+</category>
+
+<category><pattern>B B *</pattern>
+<template>Cathedral View Guest House located at cathedral quarter.</template>
+</category>
+<category><pattern>_ B B *</pattern>
+<template>Cathedral View Guest House located at cathedral quarter.</template>
+</category>
+<category><pattern>_ B B</pattern>
+<template>Cathedral View Guest House located at cathedral quarter.</template>
+</category>
+<category><pattern>BED AND BREAKFAST *</pattern>
+<template>Longdales House located at cathedral quarter, has cycles for rent.</template>
+</category>
+<category><pattern>_ BED AND BREAKFAST *</pattern>
+<template>Longdales House located at cathedral quarter, has cycles for rent.</template>
+</category>
+<category><pattern>_ BED AND BREAKFAST</pattern>
+<template>Longdales House located at cathedral quarter, has cycles for rent.</template>
+</category>
+<category><pattern>BED BREAKFAST * </pattern>
+<template>Bishop Grosseteste University Halls located at cathedral quarter.</template>
+</category>
+<category><pattern>HOTEL *</pattern>
+<template>Caste hotel located on top of the hill at cathedral quarter area</template>
+</category>
+<category><pattern>SELF-CATTERING *</pattern>
+<template><random>
+<li>Grayz Apartments located at cathedral quarter.</li>
+<li>Museum Court located at cultural quarter which is north of river Witham and southern to cathedral.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>SELF CATTERING *</pattern>
+<template>Bail Mews located at cathedral quarter</template>
+</category>
+<category><pattern>CAMPING * </pattern>
+<template>Lincoln yurts are 3-10 miles away.</template>
+</category>
+<category><pattern>CARAVAN *</pattern>
+<template>I have no information about this option due to its unpopularity among tourists.</template>
+</category>
+
+<!-- ================================================== SUGGESTIONS================================================================ -->
+	<category>
+		<pattern>_ SUGGEST * STAY</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * STAY *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ NEED * STAY</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ NEED * STAY *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * SLEEP</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * SLEEP *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ NEED * SLEEP</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ NEED * SLEEP *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * HOTEL *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * HOTEL</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ SUGGEST * HOTEL</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ NEED * HOTEL</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	
+	<category>
+		<pattern>_ RECOMMEND * STAY</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * STAY *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * SLEEP</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * SLEEP *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * HOTEL *</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * HOTEL</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>
+	<category>
+		<pattern>_ RECOMMEND * HOTEL</pattern>
+		<template><srai>PTSIL</srai></template>
+	</category>		
+	
+	
+	<category>
+		<pattern>_ BETTER</pattern>
+		<that>
+			_ HOTEL *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ BETTER *</pattern>
+		<that>
+			_ HOTEL *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ DON * LIKE *</pattern>
+		<that>
+			_ HOTEL *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ BAD</pattern>
+		<that>
+			_ HOTEL *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+	<category>
+		<pattern>_ BAD *</pattern>
+		<that>
+			_ HOTEL *
+		</that>
+		<template>Well perhaps you could be more specific with what you want?</template>
+	</category>
+
+</aiml>
