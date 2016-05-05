@@ -1874,6 +1874,44 @@
 		<template>The Strait and Narrow have a wide selection of Craft Beer, as well as Brewhaus. Any of those sound good?</template>
 	</category>
 	
+  		<!-- ======================================================= TRADITIONAL ========================================================================= -->	
+	<category>
+		<pattern>TRADITIONAL</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Still is a classic pub with cheap food and drink. Any of those sound good?</template>
+	</category>	
+	<category>
+		<pattern>_ TRADITIONAL</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Still is a classic pub with cheap food and drink. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ REALLY * TRADITIONAL</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Still is a classic pub with cheap food and drink. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>_ TRADITIONAL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Still is a classic pub with cheap food and drink. Any of those sound good?</template>
+	</category>
+	<category>
+		<pattern>I * TRADITIONAL *</pattern>
+		<that>
+			_ DRINK *
+		</that>
+		<template>The Still is a classic pub with cheap food and drink. Any of those sound good?</template>
+	</category>
+	
+  
 		<!-- ======================================================= COCKTAILS ========================================================================= -->	
 	<category>
 		<pattern>COCKTAILS</pattern>
