@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AIMLbot;
+using Skype4Sharp;
 
 namespace Chatbot
 {
@@ -12,13 +13,15 @@ namespace Chatbot
     {
         public string userName;
         public RichTextBox textBox;
-        public User AIusr;
+        public AIMLbot.User AIusr;
+        public Chat chat;
 
-        public myUser(string user, ref RichTextBox richTextBox, Bot theBot, string userFullName)
+        public myUser(string user, ref RichTextBox richTextBox, Bot theBot, string userFullName, Chat theChat)
         {
             userName = user;
             textBox = richTextBox;
             AIusr = new AIMLbot.User(user, theBot);
+            chat = theChat;
             if (userFullName != "")
                 AIusr.Predicates.updateSetting("name", userFullName);
             else

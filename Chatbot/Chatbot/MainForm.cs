@@ -71,8 +71,15 @@ namespace Chatbot
 
         void SendMessage()
         {
-            mainSkype.SendMessage(tabControl1.SelectedTab.Text, textBox1.Text);
-            textBox1.Text = String.Empty;
+            if (tabControl1.TabPages.Count != 0)
+            {
+                myUser usr = getCurrentUser(tabControl1.SelectedTab.Text, tabControl1.SelectedTab.Text, null);
+                if (usr.chat != null)
+                {
+                    usr.chat.SendMessage(textBox1.Text);
+                    textBox1.Text = String.Empty;
+                }
+            }
         }
 
 
@@ -88,7 +95,7 @@ namespace Chatbot
 
             if (msg.Sender.Username != skype_botName)
             {
-                myUser usr = getCurrentUser(msg.Sender.Username, msg.Sender.DisplayName);
+                myUser usr = getCurrentUser(msg.Sender.Username, msg.Sender.DisplayName, msg.Chat);
                 usr.textBox.AppendText("\n\n" + msg.Sender.Username + ": " + msg.Body);
                 string resp = chatbot.getResponse(msg.Body, usr.AIusr, label2);
                 msg.Chat.SendMessage(resp);
@@ -96,7 +103,7 @@ namespace Chatbot
             }
         }
 
-        private myUser initUser(string user, string userFullName)
+        private myUser initUser(string user, string userFullName, Chat chat)
         {
             TabPage tp;
             if (conversation_users.Count == 0)
@@ -112,12 +119,12 @@ namespace Chatbot
             tp.Text = user;
             if (conversation_users.Count != 0)
                 tabControl1.TabPages.Add(tp);
-            conversation_users.Add(new myUser(user, ref rtb, chatbot.getBot(), userFullName));
+            conversation_users.Add(new myUser(user, ref rtb, chatbot.getBot(), userFullName, chat));
             tabControl1.Visible = true;
             return conversation_users[conversation_users.Count-1];
         }
 
-        private myUser getCurrentUser(string user, string userFullName)
+        private myUser getCurrentUser(string user, string userFullName, Chat chat)
         {
             myUser currentUsr = new myUser();
             bool found = false;
@@ -131,8 +138,8 @@ namespace Chatbot
                 }
             }
 
-            if (!found)
-                currentUsr = initUser(user, userFullName);
+            if (!found && chat != null)
+                currentUsr = initUser(user, userFullName, chat);
 
             return currentUsr;
         }
