@@ -8,16 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using SKYPE4COMLib;
 using AIMLbot;
 using System.Threading;
+using Skype4Sharp;
+using Skype4Sharp.Events;
+using Skype4Sharp.Auth;
+using Skype4Sharp.Helpers;
+using Skype4Sharp.Enums;
 
 namespace Chatbot
 {
     public partial class MainForm : Form
     {
-
-        private Skype skype;
+        private Skype4Sharp.Skype4Sharp mainSkype;
         private string skype_botName; // display name of local user (bot)
         ChatResponse chatbot;
         List<myUser> conversation_users;
@@ -26,24 +29,39 @@ namespace Chatbot
         {
             InitializeComponent();
 
-            Process[] pname = Process.GetProcessesByName("Skype");
-            if (pname.Length == 0)
-            {
-                MessageBox.Show("Skype is not running. Please open Skype and run the program again.", "Skype not Running", MessageBoxButtons.OK);
-                Environment.Exit(-1);
-            }
+            bool loginFlag = false;
+            string user = "";
 
-            skype = new Skype();
-            skype.MessageStatus += OnMessage;
-            skype.Attach(7, false);
-            skype_botName = skype.CurrentUserHandle;
+            do
+            {
+                // Get login info from user
+                Login userLogin = new Login();
+
+                if (userLogin.ShowDialog() != DialogResult.OK || (userLogin.user == "" || userLogin.pass == ""))
+                {
+                    MessageBox.Show("You need to provide credentials to use this program.", "Skype Login Error", MessageBoxButtons.OK);
+                    Environment.Exit(-1);
+                }
+
+                // create credential object
+                Skype4Sharp.Auth.SkypeCredentials creds = new Skype4Sharp.Auth.SkypeCredentials(userLogin.user, userLogin.pass);
+
+                mainSkype = new Skype4Sharp.Skype4Sharp(creds);
+                if (mainSkype.Login())
+                {
+                    loginFlag = true;
+                    user = userLogin.user;
+                }
+                else
+                    MessageBox.Show("Login failed. Please try again.", "Skype Login Error", MessageBoxButtons.OK);
+
+            } while (loginFlag == false);
+
+            mainSkype.messageReceived += OnMessage;
+            skype_botName = user;
             chatbot = new ChatResponse();
             conversation_users = new List<myUser>();
-
-            foreach (ChatMessage m in skype.MissedMessages)
-            {
-                m.Seen = true;
-            }
+            mainSkype.StartPoll();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,41 +71,29 @@ namespace Chatbot
 
         void SendMessage()
         {
-            skype.SendMessage(tabControl1.SelectedTab.Text, textBox1.Text);
+            mainSkype.SendMessage(tabControl1.SelectedTab.Text, textBox1.Text);
             textBox1.Text = String.Empty;
         }
 
 
-        //Will read from skype and update text box, but only if skype is the active window (?)
-        private void OnMessage(ChatMessage msg, TChatMessageStatus status)
+        //Will read from skype and update text box
+        private void OnMessage(ChatMessage msg)
         {
-            if (msg.Sender.Handle != skype_botName)
+            // check if we are on the main thread
+            if (InvokeRequired)
             {
-                msg.Seen = true;
-                switch (status)
-                {
-                    case TChatMessageStatus.cmsReceived:
-                        myUser usr = getCurrentUser(msg.Sender.Handle, msg.Sender.FullName);
-                        usr.textBox.AppendText("\n\n" + msg.Sender.Handle + ": " + msg.Body);
-                        string resp = chatbot.getResponse(msg.Body, usr.AIusr, label2);
-                        skype.SendMessage(msg.Sender.Handle, resp);
-                        usr.textBox.AppendText("\n\nBot: " + resp);
-                        break;
-                    case TChatMessageStatus.cmsSent:
-                    case TChatMessageStatus.cmsRead:
-                    case TChatMessageStatus.cmsSending:
-                        // nothing
-                        break;
-                    default:
-                        MessageBox.Show("ERROR");
-                        break;
-                }
+                Invoke((MethodInvoker)delegate { OnMessage(msg); });
+                return;
             }
-        }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
+            if (msg.Sender.Username != skype_botName)
+            {
+                myUser usr = getCurrentUser(msg.Sender.Username, msg.Sender.DisplayName);
+                usr.textBox.AppendText("\n\n" + msg.Sender.Username + ": " + msg.Body);
+                string resp = chatbot.getResponse(msg.Body, usr.AIusr, label2);
+                msg.Chat.SendMessage(resp);
+                usr.textBox.AppendText("\n\nBot: " + resp);      
+            }
         }
 
         private myUser initUser(string user, string userFullName)
@@ -129,17 +135,6 @@ namespace Chatbot
                 currentUsr = initUser(user, userFullName);
 
             return currentUsr;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (skype.Client.IsRunning)
-            {
-                foreach(ChatMessage m in skype.MissedMessages) // Catch all for messages that don't trigger the Message Event
-                {
-                    OnMessage(m, m.Status);
-                }
-            }
         }
 
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
